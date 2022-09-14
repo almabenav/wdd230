@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito+Sans:wght@300;400&display=swap');
+
+body {
+    margin: auto;
+    width: 40%;
+    font-size: 15px;
+    font-family: 'Nunito Sans', 'Calibri', 'Veranda';
+}
+header {
+    display: flex;
+    justify-content:space-around;
+    background-color: #d5bba6;
+    padding: 2%;
+}
+.picture {
+    width: 90px;
+    height: 100px;
+}
+h1 {
+    font-family: 'Noto Serif', 'Impact';
+}
+li {
+    margin: 10px;
+}
+.button-green {
+    background-color: #a3beae;
+    color: black;
+    text-decoration: none;
+    padding: 0px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.63);
+}
+.button-green:hover {
+    background-color: #698474;
+}
+footer {
+    grid-template-columns: 1fr;
+    background-color: #d5bba6;
+    padding: 2%;
+}
+.footer-text, .footer-updated{
+    display: flex;
+    justify-content: center;
+}
