@@ -42,3 +42,7 @@ footer {
     display: flex;
     justify-content: center;
 }
+.space {
+    margin-right: 2px;
+}
+
