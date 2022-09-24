@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Lato&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&display=swap');
 
 header {
     background-color: #0B1F31;
     padding: 1px;
 }
 
-main {
+main picture img{width: 100%;}
 
+main picture{
+    width: 100%;
+    margin: 0;
 }
 
 h1, h2 {
@@ -22,11 +24,12 @@ h3 {
     color: aliceblue; 
     margin: 0; 
     padding: 2%;
+    border-radius: 10px 10px 0px 0px; 
 }
 
-.card {background-color: #EEEEEE; padding: 3%;}
+.card-info {padding: 3%;}
 
-p {font-family: 'Dosis', sans-serif;}
+p, a {font-family: 'Poppins', sans-serif;}
 
 .cards-grid {
     display: grid;
@@ -34,20 +37,24 @@ p {font-family: 'Dosis', sans-serif;}
     grid-template-columns: 1fr;
 }
 
-#REpetition, #rule, #abc {
-    margin: 3%;
-}
+.first-card, .second-card, .third-card {
+    margin: 3%; 
+    border-radius: 10px; 
+    border: 1px solid #cfcfcf; 
+    background-color: #EEEEEE;}
 
 footer {
     grid-template-columns: 1fr;
     background-color: #0B1F31;
     color: aliceblue;
-    padding: 2%;
+    padding: 1%;
 }
-.footer-text, .footer-updated{
+
+.footer-text{
     display: flex;
     justify-content: center;
 }
+
 .space {
     margin-right: 4px;
     margin-left: 4px;
