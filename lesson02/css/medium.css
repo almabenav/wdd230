@@ -1,18 +1,9 @@
 @media only screen and (min-width: 560px) {
 
-    h1, h2 {
-        color: rgb(125, 13, 80);
-    }
-
     header, footer, main { max-width: 30rem; margin: auto;}
 
-    .cards-grid {
-        grid-template-columns: 1fr 1fr;
-    }
+    .cards-grid {grid-template-columns: 1fr 1fr;}
 
-    #abc {
-        grid-column: 1/4;
-        margin: 2%
-    }
+    .third-card {grid-column: 1/4; margin: 2%}
 
 }
