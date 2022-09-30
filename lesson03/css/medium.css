@@ -1,0 +1,15 @@
+@media only screen and (min-width: 560px) {
+
+    nav ul {
+        display: flex;
+        margin-left: 2%;
+    }
+
+
+    nav ul li a{padding: .5rem 1rem;}
+
+    .palette {
+        width: 50%;
+    }
+
+}

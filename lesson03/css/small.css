@@ -1,0 +1,60 @@
+body {
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+header {
+    background-color: #14213D;
+    color: #E5E5E5;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    padding: 4%;
+}
+
+nav {
+    background-color: #E5E5E5; 
+    font-family: 'Bebas Neue';
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #14213D;
+    color: #E5E5E5;
+}
+
+nav ul li.active a {
+    background-color: #FCA311;
+}
+
+main {
+    padding: 0 2%;
+}
+
+.palette img{
+    width: 100%;
+}
+
+.BebasNeue{
+    font-family: 'Bebas Neue';
+}
+
+footer {
+    background-color: #14213D;
+    color: #E5E5E5;
+    padding: 3%;
+    text-align: center;
+}
