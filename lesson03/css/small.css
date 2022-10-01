@@ -44,6 +44,15 @@ main {
     padding: 0 2%;
 }
 
+.personas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.second-persona {
+    grid-row: 2/3;
+}
+
 .palette img{
     width: 100%;
 }
