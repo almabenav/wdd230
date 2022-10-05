@@ -5,9 +5,12 @@
         margin:auto;
     }
 
+    .second-persona {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
     .palette {
         width: 50%;
     }
-
-    
 } 

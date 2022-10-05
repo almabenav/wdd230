@@ -6,15 +6,16 @@ body {
 header {
     background-color: #14213D;
     color: #E5E5E5;
-    font-family: 'Inter Tight';
+    font-family: 'Bebas Neue';
     text-align: center;
     padding: 4%;
 }
 
 nav {
     background-color: #E5E5E5; 
-    font-family: 'Inter Tight';
+    font-family: 'Bebas Neue';
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -43,12 +44,21 @@ main {
     padding: 0 2%;
 }
 
+.personas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.second-persona {
+    grid-row: 2/3;
+}
+
 .palette img{
     width: 100%;
 }
 
-.InterTight{
-    font-family: 'Inter Tight';
+.BebasNeue{
+    font-family: 'Bebas Neue';
 }
 
 footer {
