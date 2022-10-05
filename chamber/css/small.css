@@ -1,0 +1,100 @@
+body {
+	font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.logo {
+	background-color: #14213D;
+	color: #E5E5E5;
+	letter-spacing: 1pt;
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+}
+
+picture, header section {
+	margin-left: 1rem;
+
+}
+
+.logo img {width: 100px;}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+	margin-left: .7rem;
+	margin-bottom: -40;
+    font-family: 'Bebas Neue';
+}
+
+.headings h1 {
+	font-size: 1.5rem;
+	margin-bottom: 0px;
+}
+
+.slogan {
+	letter-spacing: 2pt;
+    color: #FCA311;
+	font-size: 0.8rem;
+	margin-top: 0px;
+}
+
+.date {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0.75rem;
+	background-color: #E5E5E5;
+}
+
+
+nav button {
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+
+nav {
+    background-color: #E5E5E5; 
+    font-family: 'Bebas Neue';
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: #FCA311;
+}
+
+nav ul li a:hover {
+    background-color: #14213D;
+    color: #E5E5E5;
+}
+
+nav ul { display: none;}
+
+nav ul.open {
+    display: block;
+}
+
+#hamburguerBtn span:nth-child(1) {display: block;}
+#hamburguerBtn span:nth-child(2) {display: none;}
+
+#hamburguerBtn.open span:nth-child(1) {display: none;}
+#hamburguerBtn.open span:nth-child(2) {display: block;}

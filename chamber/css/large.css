@@ -1,0 +1,33 @@
+@media only screen and (min-width: 1028px) {
+
+
+    picture, header section {
+        padding: 10px 0;
+    }
+
+    .headings h1 {
+        font-size: 2rem;
+    }
+    
+    .slogan {
+        font-size: 1.3rem;
+    }
+
+
+
+    nav button {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        margin-left: 2%;
+
+    }
+
+    nav ul li a{padding: .5rem 1rem;}
+
+
+
+
+}
