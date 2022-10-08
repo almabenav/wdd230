@@ -3,6 +3,11 @@ body {
     font-family: 'Poppins';
 }
 
+h1, h2 {font-family: 'Bebas Neue';}
+
+
+/* HEADER AND NAV*/
+
 .logo {
 	background-color: #14213D;
 	color: #E5E5E5;
@@ -12,18 +17,12 @@ body {
 	align-items: center;
 }
 
-picture, header section {
-	margin-left: 1rem;
-
-}
-
-.logo img {width: 100px;}
+.logo img, footer img {width: 100px;}
 
 .headings {
 	display: flex;
 	flex-direction: column;
 	margin-left: .7rem;
-	margin-bottom: -40;
     font-family: 'Bebas Neue';
 }
 
@@ -39,6 +38,9 @@ picture, header section {
 	margin-top: 0px;
 }
 
+.social {margin: auto;}
+.social img {width: 32px; }
+
 .date {
 	display: flex;
 	align-items: center;
@@ -48,7 +50,6 @@ picture, header section {
 	padding: 0.75rem;
 	background-color: #E5E5E5;
 }
-
 
 nav button {
     margin: .2rem 2vw;
@@ -98,3 +99,43 @@ nav ul.open {
 
 #hamburguerBtn.open span:nth-child(1) {display: none;}
 #hamburguerBtn.open span:nth-child(2) {display: block;}
+
+/* MAIN */
+
+main, picture, main h2{margin: 0.5rem;}
+
+.mainGrid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 1%;
+	margin-bottom: 2rem;
+}
+
+.event {grid-row: 2;}
+.weather {grid-row: 3;}
+.join {grid-row: 4;}
+.hero {grid-row: 1;}
+.spotlight1 {grid-row: 6;}
+.spotlight2 {grid-row: 7;}
+.newRelease {grid-row: 5;}
+
+.event, .weather, .join, .hero, .spotlight1, .spotlight2, .newRelease {
+	background-color: #E5E5E5;
+    border: 1px solid #cfcfcf; 
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #14213D;
+	color: #E5E5E5;
+	padding: 5%;
+	text-align: center;
+}
+
+.footerText p:nth-child(1){font-weight: bold;}
+footer a {color: #E5E5E5; text-decoration: none;}
+.footerText1, .footerText3 {display: flex; justify-content: center;}
+.space {margin-right: 4px;}
+.baseFooter{ margin-top: 20px; border-top: 1px solid rgba(187, 187, 187, 0.233);}

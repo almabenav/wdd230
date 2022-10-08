@@ -4,14 +4,25 @@ function toggleMenu() {
     document.getElementById('hamburguerBtn').classList.toggle('open');
 }
 
+
+//Year footer
+const fecha = document.querySelector("#year")
+const FECHA = new Date()
+fecha.innerHTML= FECHA.toLocaleDateString('en-us',{year:'numeric'})
+
+
+//Last time Modified
+let text = document.lastModified;
+document.getElementById("lastTimeModified").innerHTML = text;
+
+
+//Date nav
 const x = document.getElementById('hamburguerBtn')
 x.onclick = toggleMenu;
 
-// select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");
-const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
+const datefieldUK = document.querySelector("aside"); 
 
-// derive the current date using a date object
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
@@ -19,9 +30,10 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 	dateStyle: "full"
 }).format(now);
-// long, medium, short options ... try them
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+
+
 
 
