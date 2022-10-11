@@ -1,6 +1,13 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
 body {
 	font-size: 16px;
     font-family: 'Poppins';
+	width: 100%;
 }
 
 h1, h2 {font-family: 'Bebas Neue';}
@@ -104,23 +111,8 @@ nav ul.open {
 
 main, picture, main h2{margin: 0.5rem;}
 
-.mainGrid {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr;
-	row-gap: 1%;
-	margin-bottom: 2rem;
-}
-
-.event {grid-row: 2;}
-.weather {grid-row: 3;}
-.join {grid-row: 4;}
-.hero {grid-row: 1;}
-.spotlight1 {grid-row: 6;}
-.spotlight2 {grid-row: 7;}
-.newRelease {grid-row: 5;}
-
 .event, .weather, .join, .hero, .spotlight1, .spotlight2, .newRelease {
+	height: 150px;
 	background-color: #E5E5E5;
     border: 1px solid #cfcfcf; 
 }
