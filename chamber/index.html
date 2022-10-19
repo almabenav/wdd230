@@ -48,12 +48,11 @@
         </ul>
     </nav>
     <main>
-        <picture class="hero-img">
-            <img srcset="images/heroSrc400.jpg 400w,
-                        images/heroSrc650.jpg 650w,
-                        images/heroSrc900.jpg 900w"
-                        src="images/heroSrc1050.jpg" 
-                        alt="hero img">
+        <picture class="hero-img">    
+            <source srcset="images/heroSrc400.jpg" media="(max-width: 400px)">
+            <source srcset="images/heroSrc650.jpg" media="(max-width: 650px)">
+            <source srcset="images/heroSrc900.jpg" media="(max-width: 900px)">
+            <img src="images/heroSrc1050.jpg " alt="Hero Img">
         </picture>
         <div class="mainGrid">
             <div class="hero">
