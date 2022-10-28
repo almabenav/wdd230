@@ -71,6 +71,8 @@
 
 
     /*-----------------------------DISCOVER PAGE-------------------------------*/
+    
+    .lastVisit {width: 500px;}
 
     .images-container img {
         -webkit-transition: all 0.7s ease;
