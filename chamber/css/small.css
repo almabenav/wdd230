@@ -115,9 +115,25 @@ nav ul.open {
 #hamburguerBtn.open span:nth-child(1) {display: none;}
 #hamburguerBtn.open span:nth-child(2) {display: block;}
 
+/*-----------------------------FOOTER-------------------------------*/
+
+footer {
+	background-color: #14213D;
+	color: #E5E5E5;
+	padding: 5%;
+	text-align: center;
+}
+
+footer a {color: #E5E5E5; text-decoration: none;}
+footer a:hover {color: #FCA311;}
+.footerText1, .footerText3 {display: flex; justify-content: center;}
+.space {margin-right: 4px;}
+.baseFooter{border-top: 1px solid rgba(187, 187, 187, 0.233);}
 
 
-/* --------------------------MAIN---------------------------- */
+
+
+/* --------------------------HOME PAGE---------------------------- */
 
 main {padding: 0.5rem 6vw 0.5rem 6vw;}
 
@@ -148,7 +164,7 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
 
 .hero {
 	width: auto;
-	background-image: url('../images/colombia-g89ab1386c_1280.jpg');
+	background-image: url('../images/colombia-g89ab1386c_12801.jpg');
 	background-size: cover;
 	background-position: center;
 	display: grid;
@@ -195,17 +211,46 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
 .spotlight1 img, .spotlight2 img {margin: auto; width: 30%;}
 
 
-/*-----------------------------FOOTER-------------------------------*/
-
-footer {
-	background-color: #14213D;
-	color: #E5E5E5;
-	padding: 5%;
+/*-----------------------------DISCOVER PAGE-------------------------------*/
+.lastVisit {
+	margin: auto;
+	margin-top: -0.5rem;
 	text-align: center;
+	width: 500px;
+	padding: .7rem;
+	color: #E5E5E5;
+	background-color: #14213D;
+	border: 1px solid #cfcfcf;
 }
 
-footer a {color: #E5E5E5; text-decoration: none;}
-footer a:hover {color: #FCA311;}
-.footerText1, .footerText3 {display: flex; justify-content: center;}
-.space {margin-right: 4px;}
-.baseFooter{border-top: 1px solid rgba(187, 187, 187, 0.233);}
+.main-discover {text-align: center;}
+
+.description {margin-top: 20px; margin-bottom: 10px;}
+.description, .demography {
+	padding: 2%;
+	background-color: #E5E5E5;
+	border: 1px solid #cfcfcf;
+}
+.description h1, .demography h2 {text-shadow: 2px 2px 0 black; 	color: #FCA311;}
+
+.images-container {margin: 50px auto 50px auto;}
+
+.images-container figure {
+	margin: auto;
+	padding: 1rem;
+	background-color: #E5E5E5;
+	border: 1px solid #cfcfcf; 
+}
+
+.images-container img {
+	margin: 0px;
+	width: 250px;
+	height: 333.5px;
+}
+
+figcaption {
+	margin: auto;
+	padding: .5rem;
+	width: 250px;
+	background-color: #fca21191;
+}

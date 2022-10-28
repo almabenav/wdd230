@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | Med Chamber</title>
+    <meta name="description" content="Discover page Medellin Chamber of Commerce Website for Alma Benavides in WDD 230">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap" rel="stylesheet">    <link href="css/small.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <picture>
+                <img src="images/logo2.webp" alt="logo">
+            </picture>
+            <section class="headings">
+                <h2>Medellin Chamber of Commerce</h2>
+                <h2 class="slogan">your best partner!</h2>
+            </section>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.webp" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.webp" alt="twitter icon">
+                </a>
+            </div>
+        </div>
+        <div class="date"></div>
+    </header>
+    <nav>
+        <button id="hamburguerBtn"><span>&#9776;</span><span>x</span></button>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>    
+        </ul>
+    </nav>
+    <main class="main-discover">
+        <p class="lastVisit"><span>Days since last visit: </span><span class="visitor"></span></p>
+        <section class="description">
+            <h1>Medellin</h1>
+            <p>Medellín is the second most important city in Colombia, and capital of the department of Antioquia; its average temperature is 24º and it is located 1,479 meters above sea level; it has an area of 105 square kilometers of urban land, 270 of rural land and 5.2 of land for expansion.</p>
+        </section>
+        <section class="demography">
+            <h2>demography of medellin</h2>
+            <p>According to 2018 census data from the National Administrative Department of Statistics -DANE-, as of that year Medellín had a population of 2,427,129 inhabitants, 47% men and 53% women, making it the second most populous city in Colombia.</p>
+        </section>
+
+        <div class="images-container">
+            <figure class="img-1">
+                <img src="images/medellin-g777a0a98e_1280-min1.jpg" loading="lazy" alt="Plaza Botero">
+                <figcaption>Plaza Botero. Pieces by Fernando Botero, Colombian painter, sculptor and draftsman.</figcaption>
+            </figure>
+            <figure class="img-2">
+                <img src="images/reiseuhu-t4sQErfTLs8-unsplash-min.jpg" loading="lazy" alt="Comuna 13">
+                <figcaption>Comuna 13 one of the most touristic areas, in the past, this area was one of the most dangerous in the city</figcaption>
+            </figure>
+            <figure class="img-3">
+                <img src="images/andres-gomez-r5jb6b3XBGE-unsplash-min1.jpg" loading="lazy" alt="Vereda">
+                <figcaption>The city is characterized by its greenery and is considered "the city of eternal spring"</figcaption>
+            </figure>
+            <figure class="img-4">
+                <img src="images/ricardo-gomez-angel-GcHar4P8V_Q-unsplash-min1.jpg" loading="lazy" alt="Vereda">
+                <figcaption>Old architecture of medellin, many of these houses are still standing</figcaption>
+            </figure>
+            <figure class="img-5">
+                <img src="images/david-o-SEeQIsldguI-unsplash-min1.jpg" loading="lazy" alt="Sombrillas">
+                <figcaption>A nice place. Umbrella passage in the center of Medellin</figcaption>
+            </figure>
+        </div>
+
+    </main>
+    <footer>
+        <div class="adress">
+            <picture>
+                <img src="images/logo2.webp" alt="logo">
+            </picture>
+            <div class="footerText">
+                <p>Medellin Chamber of Commerce</p>
+                <p>Cl. 53 #45-77</p>
+                <p>Medellin, Colombia</p>
+            </div>
+        </div>
+        <div class="links">
+            <a href="mailto:medchamber@gmail.com">medchamber@gmail.com</a><br>
+            <a href="tel:+573006211095">+(57) 300-6211095</a><br>
+            <a href="https://www.google.com/maps/place/Medell%C3%ADn,+Antioquia/@6.2442034,-75.5812115,12z/data=!3m1!4b1!4m5!3m4!1s0x8e4428dfb80fad05:0x42137cfcc7b53b56!8m2!3d6.2476376!4d-75.5658153">Link to Map</a>
+        </div>
+        <div class="baseFooter">
+            <div class="footerText1">
+                <p>&copy;</p>
+                <p id="year" class="space"></p>
+                <p>Medellin chamber</p>
+                <p class="line"></p>
+            </div>
+            <p>Alma Benavides</p>
+            <p class="line"></p>
+            <p>WDD 230 Project</p>
+            <p class="line"></p>
+            <div class="footerText3">
+                <p class="space">Last Updated:</p>
+                <p id="lastTimeModified"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/localStorage.js"></script>
+</body>
+</html>
