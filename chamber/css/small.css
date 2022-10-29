@@ -254,3 +254,12 @@ figcaption {
 	width: 250px;
 	background-color: #fca21191;
 }
+
+img[data-src] {
+	filter: blur(.4rem);
+  }
+  
+figure img {
+	filter: blur(0rem);
+	transition: filter 0.5s
+}
