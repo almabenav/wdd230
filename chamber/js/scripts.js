@@ -35,3 +35,6 @@ if (dayNumber == 1 || dayNumber == 2 ) {
 } else {
     element.classList.add("hideme");
 }
+
+//Date form
+document.querySelector('#todayDate').textContent = now;
