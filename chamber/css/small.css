@@ -189,7 +189,7 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
 .hero-txt button:hover{background: #14213D; color: #FCA311; transform: scale(1.1);}
 .btn-blue:hover {background-color: #FCA311; color: black; transform: scale(1.1);}
 
-.join button {
+.join button, .yellow-btn {
 	font-family: 'Bebas Neue';
 	border-radius: 15px;
 	font-size: 20px;
@@ -199,6 +199,7 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
     background-color: #FCA311;
 }
 
+.btn-yellow{padding: 1% 4%; color: black; text-decoration: none; background-color: #FCA311; border-radius: 4px;}
 .btn-yellow:hover{background-color: #14213D; color: #E5E5E5; transform: scale(1.1);}
 
 .cloud {width: 100%; display: flex; align-content: center;}
@@ -267,37 +268,66 @@ figure img {
 
 /*-----------------------------JOIN PAGE-------------------------------*/
 
-.form-join {
+.thanks-page div{
+	text-align: center;
+	background-color: #E5E5E5;
+	padding: 2%;
+	border-radius: 10px;
 	width: 50%;
-	background-color: #14213D;
-	padding: 30px;
-	margin: auto;
+	margin: 5% 25%;
+}
+
+.form-join {
+	min-width: 250px;
+	background-color: #E5E5E5;
 	border-radius: 4px;
+}
+
+#first-name, #last-name, #title, #email, #phone, #business-name, #describe-business{
+	font-size: 13px;
+	width: 100%;
+	padding: 14px;
+	border-radius: 4px;
+	border: 1px solid #E5E5E5;
+}
+
+.form-join h1, .form-join h2{color: #14213D;font-size: 20px;}
+textarea{height: 100px;}
+fieldset{margin-top: 5px; border: none;}
+.form-join label {cursor: pointer;}
+.form-join label.top {display: block; padding-top: 1rem;}
+
+.form-join label.sbs{
+	min-width: 40px;
+	max-width: 250px;
+	border: 2px solid #14213D;
+	display: block;
+	border-radius: 5px;
+	padding: 1rem;
+}
+
+.form label.top input:required {
+	border-left: red solid 6px;
+}
+
+.form label.top input:required:valid {
+	border-left: green solid 6px;
+}
+
+.submitBtn {
+	margin: 0 25%;
+	background: #FCA311;
+	width: 50%;
+	padding: 1rem;
+	border: none;
+	border-radius: 4px;
+}
+
+.submitBtn:hover{
+	background-color: #14213D;
 	color: #E5E5E5;
 }
 
-.form-join label {
-	margin-top: 20px;
+.membership-div ul {
+	display: none;
 }
-
-.join-main h2{}
-
-#first-name, #last-name, #email, #phone-number{
-	width: 100%;
-	background-color: #14213D;
-	padding: 10px;
-	border-radius: 4px;
-	border: 1px solid #E5E5E5;
-	
-}
-
-.join-button {
-	background: #FCA311;
-	margin-top: 2%;
-	width: 100%;
-	padding: .6rem;
-	border: none;
-	border-radius: 4px;
-
-}
-

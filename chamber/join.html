@@ -38,33 +38,88 @@
     <nav>
         <button id="hamburguerBtn"><span>&#9776;</span><span>x</span></button>
         <ul id="primaryNav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Contact</a></li>    
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
     <main class="join-main">
-        <h2>formulario</h2>
-        <form class="form-join" action="thankyou.html" method="get">
-            <label for="first-name">first-name</label>
-            <input type="text" name="first-name" id="first-name" required>
-            <label for="last-name">last-name</label>
-            <input type="text" name="last-name" id="last-name" required>
-            <label for="business"></label>
-            <title type="text" ></title>
-            <label for="email">email</label>
-            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
-            <label for="phone-number">phone-number</label>
-            <input type="tel" name="phone-number" id="phone-number" required>
-            <input class="join-button" type="submit" value="join">
+        <form class="form-join" action="/chamber/thankyou.html" method="get">
+            <fieldset>
+                <h1>Contact Information</h1>
+                <!-- first-name -->
+                <label class="top" for="first-name">First name* <input type="text" name="fname" id="first-name" required></label>
 
-            <form action="">
+                <!-- last-name -->
+                <label class="top" for="last-name">Last name* <input type="text" name="lname" id="last-name" required></label>
+
+                <!-- Title/position -->
+                <label class="top" for="title">Title <input type="text" name="title" pattern="^[a-zA-Z- ]{7,}$" id="title"></label>
+
+                <!-- email -->
+                <label class="top" for="email">Email* <input type="email" name="email" id="email" placeholder="example@gmail.com" required></label>
+
+                <!-- phone-number -->
+                <label class="top" for="phone">Phone-number* <input type="tel" name="phone" id="phone" required></label>
+            </fieldset>
+
+            <fieldset>
+                <h2>Business Information</h2>
+                <!-- business-name -->
+                <label class="top" for="business-name">Business name* <input type="text" name="business-name" id="business-name" required></label>
+                
+                <!-- describe-business -->
+                <label class="top" for="describe-business">Describe your business <textarea id="describe-business" name="describe-business" placeholder="..."></textarea></label>
             
-            </form>
+                <!-- date -->
+                <input type="hidden" name="datetime" id="todayDate">
+            </fieldset>         
+            
+            <fieldset class="membership">
+
+                <!-- Membership -->
+                <h2>Membership</h2>
+                <div class="membership-div">
+
+                    <!-- NP Membership -->
+                        <label class="sbs" for="non-profit-membership"> <input type="radio" name="member-ship" id="non-profit-membership" value="NPMembership"> Non-Profit Membership</label><br>
+                        <ul class="non-profit-beneficts">
+                            <li>No fee</li>
+                            <li>for non profit organizations</li>
+                            <li>Advertisement e-mails about chamber events</li>
+                        </ul>    
+                    
+                    <!-- Bronze Membership -->
+                        <label class="sbs" for="bronze-membership"> <input type="radio" name="member-ship" id="bronze-membership" value="Bronze Membership"> Bronze Membership</label><br>
+                        <ul class="bronze-beneficts">
+                            <li>Annual cost: $59,82</li>
+                            <li>Exclusive portfolio of benefits and additional services</li>
+                        </ul>
+
+                    <!-- Silver Membership -->
+                        <label class="sbs" for="silver-membership"> <input type="radio" name="member-ship" id="silver-membership" value="Silver Membership"> Silver Membership</label><br>
+                        <ul class="silver-beneficts">
+                            <li>Annual cost: $125,25</li>
+                            <li>25% on room rentals at the Business Center.</li>
+                            <li>Access to events and various networking and relationship spaces.</li>
+                        </ul>
+
+                    <!-- Gold Membership -->
+                        <label class="sbs" for="gold-membership"> <input type="radio" name="member-ship" id="gold-membership" value="Gold Membership"> Gold Membership</label><br>
+                        <ul class="gold-beneficts">
+                            <li>Annual cost: $188,47</li>
+                            <li>Seminars</li>
+                            <li>Personalized support from an Affiliate professional.</li>
+                            <li>Participation in the affiliates meeting held every 2 years.</li>
+                        </ul>
+                </div>
+            </fieldset>
+
+            <!-- button -->
+            <input class="submitBtn" type="submit" value="join">
         </form>
-       
     </main>
 
     <footer>
