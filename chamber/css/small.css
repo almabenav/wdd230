@@ -272,9 +272,9 @@ figure img {
 .thanks-page div{
 	text-align: center;
 	background-color: #E5E5E5;
-	padding: 2%;
+	padding: 5%;
 	border-radius: 10px;
-	width: 50%;
+	width: 60%;
 	margin: 5% 25%;
 }
 
@@ -290,7 +290,6 @@ figure img {
 	width: 100%;
 	padding: 14px;
 	border-radius: 4px;
-	border: 1px solid #E5E5E5;
 }
 
 .form-join h1, .form-join h2{color: #14213D;font-size: 20px;}
@@ -308,11 +307,16 @@ fieldset{margin-top: 5px; border: none;}
 	padding: 1rem;
 }
 
-.form label.top input:required {
-	border-left: red solid 6px;
+form input {
+	border: 1px solid #E5E5E5;
 }
 
-.form label.top input:required:valid {
+form label.top input:required {
+	border-left: red solid 6px;
+	
+}
+
+form label.top input:required:valid {
 	border-left: green solid 6px;
 }
 
