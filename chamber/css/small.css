@@ -285,10 +285,11 @@ figure img {
 	border-radius: 4px;
 }
 
-#first-name, #last-name, #title, #email, #phone, #business-name, #describe-business{
+.top input, .top textarea{
+	display: block;
 	font-size: 13px;
 	width: 100%;
-	padding: 14px;
+	padding: 16px;
 	border-radius: 4px;
 }
 
@@ -298,27 +299,18 @@ fieldset{margin-top: 5px; border: none;}
 .form-join label {cursor: pointer;}
 .form-join label.top {display: block; padding-top: 1rem;}
 
-.form-join label.sbs{
+.membership label.sbs{
+    display: block;
+    padding: 1rem;
 	min-width: 40px;
 	max-width: 250px;
 	border: 2px solid #14213D;
-	display: block;
 	border-radius: 5px;
-	padding: 1rem;
-}
+} 
 
-form input {
-	border: 1px solid #E5E5E5;
-}
-
-form label.top input:required {
-	border-left: red solid 6px;
-	
-}
-
-form label.top input:required:valid {
-	border-left: green solid 6px;
-}
+form input {border: 1px solid #E5E5E5;}
+form label.top input:required {border-left: red solid 6px;}
+form label.top input:required:valid {border-left: green solid 6px;}
 
 .submitBtn {
 	background: #FCA311;
@@ -334,6 +326,6 @@ form label.top input:required:valid {
 	color: #E5E5E5;
 }
 
-.membership-div ul {
+.membership-beneficts {
 	display: none;
 }

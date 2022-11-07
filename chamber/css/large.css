@@ -93,4 +93,9 @@
  .img-5 {grid-column: 5/7; grid-row: 8/14;}
 
 
+/*-----------------------------JOIN PAGE-------------------------------*/
+.top input,
+.top textarea {
+width: 60%;
+}
 }
