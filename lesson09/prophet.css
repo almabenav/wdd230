@@ -1,0 +1,36 @@
+body {text-align: center; font-family: Arial, Helvetica, sans-serif;}
+
+.cards {
+    min-width: 250px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: #ebebf3;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  h1, h2 {
+    color: #555588;
+    text-shadow: 1px 1px 0 black ;
+  }
+
+  p {font-size: 13px;}
+
+  div.cards section {
+    margin: 1rem;
+    padding: 5%;
+    background-color: #B5B5CA;
+    border: 1px solid #555588;
+    border-radius: 3px;
+  }
+
+  img {
+    width: 200px;
+    height: 260px;
+    box-shadow: 0 0 15px rgb(24, 24, 24);
+    border-radius: 3px;
+  }
+
+  footer, header {
+    padding: 2%;
+  }
