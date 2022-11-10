@@ -3,15 +3,15 @@
       {
         "logourl": "https://www.alamedainmobiliaria.com/wp-content/uploads/2015/08/arriendo-venta-en-medellin-logo3.png",
         "name": "Inmobiliaria Alameda",
-        "membership": "",
+        "membership": "Gold Membership",
         "adress": "Cl. 44 #7065, Laureles - Estadio, Medellín",
         "phone": "(604) 4116600",
         "website": "https://www.alamedainmobiliaria.com/"
       },
       {
         "logourl": "https://engicosas.com/images/New%20logo.png",
-        "name": "engico SAS",
-        "membership": "",
+        "name": "Engico SAS",
+        "membership": "Silver Membership",
         "adress": "Cl. 7 Sur #42-70, El Poblado, Medellín",
         "phone": "(300) 4031060",
         "website": "https://engicosas.com/"
@@ -19,7 +19,7 @@
       {
         "logourl": "https://www.dqisa.com/wp-content/uploads/2020/11/logo-dqi-footer.png",
         "name": "Distribuidora de Quimicos Industriales",
-        "membership": "",
+        "membership": "Gold Membership",
         "adress": "Cra. 50C #10 sur-18, Guayabal, Medellín",
         "phone": "(300) 5671540",
         "website": "https://www.dqisa.com/"
@@ -27,7 +27,7 @@
       {
         "logourl": "https://calzaflor.com/wp-content/uploads/2021/08/logo_calzaflor.png",
         "name": "Calzaflor",
-        "membership": "",
+        "membership": "Silver Membership",
         "adress": "Cra. 50A # 62-05, La Candelaria, Medellín",
         "phone": "(604) 2113838",
         "website": "https://calzaflor.com/"
@@ -35,7 +35,7 @@
       {
         "logourl": "https://www.ferrocortes.com.co/wp-content/uploads/2021/09/cropped-pagina-web2-01-01-1.png",
         "name": "Ferrocortes",
-        "membership": "",
+        "membership": "Silver Membership",
         "adress": "Carrera 65 y 55, Cl. 29D #55-205, Medellín",
         "phone": "(604) 4484340",
         "website": "https://www.ferrocortes.com.co/"
@@ -43,7 +43,7 @@
       {
         "logourl": "https://www.plenitudotonal.com/php/wp-content/uploads/2019/10/logo-ok.png",
         "name": "plenitudotonal",
-        "membership": "",
+        "membership": "Gold Membership",
         "adress": "Cl. 7 Sur #50c-36, Guayabal, Medellín",
         "phone": "(604) 2550422",
         "website": "https://laminaire.net/"
@@ -51,7 +51,7 @@
       {
         "logourl": "https://www.automontana.com/wp-content/uploads/2020/12/Logo-Automontan%CC%83a-2020-01-red2.png",
         "name": "Automontana",
-        "membership": "",
+        "membership": "Bronze Membership",
         "adress": "Cl. 29 #43a5, El Poblado, Medellín",
         "phone": "(604) 3547800",
         "website": "https://www.automontana.com/"
@@ -59,7 +59,7 @@
       {
         "logourl": "https://www.cesde.edu.co/SiteAssets/img/logo-cesde.png",
         "name": "Cesde",
-        "membership": "",
+        "membership": "Non-profit Membership",
         "adress": " Cl. 49 #41-9, La Candelaria, Medellín",
         "phone": "(604) 2291100",
         "website": "https://www.cesde.edu.co/"
@@ -67,7 +67,7 @@
       {
         "logourl": "https://www.planautos.com/wp-content/uploads/2021/09/logo-sobre-negro.png",
         "name": "Planautos",
-        "membership": "",
+        "membership": "Bronze Membership",
         "adress": " Cra. 50 #32-110, La Candelaria, Medellín",
         "phone": "(604) 4440007",
         "website": "https://www.planautos.com/"
