@@ -94,8 +94,20 @@
 
 
 /*-----------------------------JOIN PAGE-------------------------------*/
+
 .top input,
 .top textarea {
 width: 60%;
 }
+
+/*-----------------------------DIRECTORY PAGE-------------------------------*/
+
+.list div img {
+    display: block;
+    width: 100px;
+    height: 50px;
+}
+
+.list h3{display: none;}
+
 }

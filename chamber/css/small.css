@@ -280,6 +280,7 @@ figure img {
 
 .form-join {
 	margin: auto;
+	width: 70%;
 	min-width: 350px;
 	background-color: #E5E5E5;
 	border-radius: 4px;
@@ -329,3 +330,59 @@ form label.top input:required:valid {border-left: green solid 6px;}
 .membership-beneficts {
 	display: none;
 }
+
+/*-----------------------------DIRECTORY PAGE-------------------------------*/
+
+.main-directory h1 {margin-left: 1.5rem;}
+
+.menu {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.menu img {cursor: pointer; padding: .5rem;}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    border-radius: 5px;
+	text-align: center;
+	justify-items: center;
+}
+
+.cards div {
+	width: 350px;
+	background-color: #E5E5E5;
+	box-shadow: 0 0 15px rgb(24, 24, 24);
+	border-radius: 3px;
+	margin: 1.5rem;
+	padding: 6%;
+
+}
+
+.cards img {
+    width: 240px;
+    height: 110px;
+	margin-bottom: 8px;
+}
+
+div.cards p:nth-child(0){
+	color: #14213D;
+}
+
+.cards p { margin: 5px; font-size: 14px;}
+
+.list {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+
+.list div{
+	width: auto;
+	align-items: center;
+}
+
+.list p {margin: 0;}
+.list img {display: none;}
