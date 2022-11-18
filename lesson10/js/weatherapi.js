@@ -27,7 +27,16 @@ function displayResults(weatherData) {
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
 
+    let capDesc = "";
+    for (let i = 0; i < desc.length; i++) {
+        if (desc[i-1] == " " || desc[i] == desc[0]) {
+            capDesc += desc[i].toUpperCase();
+        } else {
+            capDesc += desc[i];
+        }
+    }
+
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
+    weatherIcon.setAttribute('alt', capDesc);
+    captionDesc.textContent = capDesc;
   }
