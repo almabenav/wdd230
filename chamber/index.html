@@ -49,12 +49,6 @@
         </ul>
     </nav>
     <main class="main-index">
-        <picture class="hero-img">    
-            <source srcset="images/heroSrc400.jpg" media="(max-width: 400px)">
-            <source srcset="images/heroSrc650.jpg" media="(max-width: 650px)">
-            <source srcset="images/heroSrc900.jpg" media="(max-width: 900px)">
-            <img src="images/heroSrc1050.jpg " alt="Hero Img">
-        </picture>
         <h1>Home</h1>
         <div class="mainGrid">
             <div class="hero">
@@ -71,13 +65,15 @@
             <div class="weather">
                 <h2>Current Weather</h2>
                 <div class="cloud">
-                    <img src="images/nube.webp" alt="Cloud">
-                    <p><span id="temp">32</span>&deg;C</p>
+                    <!-- <img src="images/nube.webp" alt="Cloud"> -->
+                    <img src="" alt="" id="weather-icon" />
+                    <p><span id="current-temp"></span>&deg;C</p>
                 </div>
-                <h3>Partly Cloudly</h3>
+                <h3 id="description"></h3>
                 <hr>
-                <p>current wind speed is <span id="speed">60</span> mph</p>
-                <p id="chill">message</p>
+                <p>current wind speed is <span id="speed">00</span> mph</p>
+                <p>wind child is<span id="chill">00</span></p>
+                <p class="weather-link">Data provided by: <a href="https://openweathermap.org/">https://openweathermap.org/</a></p>
             </div>
             <div class="newRelease">
                 <h2>new release</h2>
@@ -98,7 +94,7 @@
                 <p>contact@codeprimera.com<br>+999-9999-9999</p>
             </div>
             <div class="join">
-                <button class="btn-yellow">Join Us!</button>
+                <button class="btn-yellow"> <a href="join.html">Join Us!</a></button>
                 <p>Discover how to join the chamber of commerce and how it wil benfit your organization!</p>
             </div>
         </div>
@@ -137,6 +133,7 @@
         </div>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="js/weather.js"></script>
     <script src="js/windchill.js"></script>
 </body>
 </html>

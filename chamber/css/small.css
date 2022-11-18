@@ -131,13 +131,9 @@ footer a:hover {color: #FCA311;}
 .baseFooter{border-top: 1px solid rgba(187, 187, 187, 0.233);}
 
 
-
-
 /* --------------------------HOME PAGE---------------------------- */
 
 main {padding: 0.5rem 6vw 0.5rem 6vw;}
-
-.hero-img img{width: 100%;}
 
 .event, .weather, .join, .hero, .spotlight1, .spotlight2, .newRelease {
 	background-color: #E5E5E5;
@@ -205,6 +201,9 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
 .cloud {width: 100%; display: flex; align-content: center;}
 .cloud p {margin: auto; font-size: 1.7rem;}
 .weather div img {margin: auto; width:40%;}
+.weather-link {font-size: 12px;}
+#weather-icon{width: 20%;}
+
 
 .event h3 {font-size: 15px}
 .event a:hover {color: #FCA311;}
