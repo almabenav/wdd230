@@ -10,6 +10,7 @@ async function apiFetch() {
       if (response.ok) {
         const data = await response.json();
         console.log(data);
+        (windchill);
         displayResults(data);
       } else {
           throw Error(await response.text());
@@ -44,7 +45,7 @@ function displayResults(weatherData) {
 
 
 // WIND SPEED AND CHILL
-const tempNumber = parseFloat(document.getElementById("current-temp").textContent);
+const tempNumber =parseFloat(document.getElementById("current-temp").textContent);
 const speedNumber = parseFloat(document.getElementById("speed").textContent);
 
 let windchill = 35.74 + (0.6215 * tempNumber) - (35.75 * Math.pow(speedNumber, 0.16)) + 
