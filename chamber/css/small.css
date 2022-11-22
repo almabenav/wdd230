@@ -179,10 +179,10 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
 	border-radius: 15px;
 	border-style: none;
     padding: 6% 8%;
-    color: #E5E5E5;
     background-color: #14213D;
 }
-.hero-txt button:hover{background: #14213D; color: #FCA311; transform: scale(1.1);}
+.hero-txt button a {text-decoration: none; color: #E5E5E5;}
+.hero-txt button a:hover{background: #14213D; color: #FCA311; transform: scale(1.1);}
 .btn-blue:hover {background-color: #FCA311; color: black; transform: scale(1.1);}
 
 .join button, .yellow-btn {
