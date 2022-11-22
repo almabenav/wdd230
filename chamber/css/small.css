@@ -199,8 +199,8 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
 .btn-yellow{padding: 1% 4%; color: black; text-decoration: none; background-color: #FCA311; border-radius: 4px;}
 .btn-yellow:hover{background-color: #14213D; color: #E5E5E5; transform: scale(1.1);}
 
-.cloud {width: 100%; display: flex; align-content: center;}
-.cloud p {margin: auto; font-size: 1.7rem;}
+.weather-info {width: 100%; display: flex; align-content: center;}
+.weather-info h3 {margin: auto; font-size: 1.7rem;}
 .weather div img {margin: auto; width:40%;}
 .weather-link {font-size: 12px;}
 #weather-icon{width: 20%;}
