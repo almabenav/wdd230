@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join | Med Chamber</title>
+    <title>Document</title>
     <meta name="description" content="Medellin Chamber of Commerce Website for Alma Benavides in WDD 230">
     <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -41,17 +41,41 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li class="active"><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>   
+            <li><a href="join.html">Join</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <main class="thanks-page">
-        <div>
-            <p>Thank you for joining the Medellin Chamber of Commerce</p>
-            <p>we will be in contact with you!</p>
-            <a class="btn-yellow" href="/chamber/join.html">back</a>
-        </div>
+    <main class="contact-main">
+        <div class="contact-form">
+            <form class="" method="get" action="thankyou.html">
+                <fieldset>
+                    <h1>Contact Form</h1>
+                    <!-- Name -->
+                    <label class="top" for="name">Name* <input type="text" name="name" id="name" required></label>
+        
+                    <!-- email -->
+                    <label class="top" for="email">Email* <input type="email" name="email" id="email" placeholder="example@gmail.com" required></label>
+        
+                    <!-- phone-number -->
+                    <label class="top" for="question">Question/Concern <textarea id="question" name="question" placeholder="..."></textarea></label>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="join">
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.10415688193!2d-75.56624668648023!3d6.250004328019269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f838a0a937%3A0x74e1c3997a3a0d1d!2sC%C3%A1mara%20de%20Comercio%20de%20Medell%C3%ADn%20Centro!5e0!3m2!1ses!2sco!4v1669250334033!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+        <section class="contact-info">
+            <h1>Contact us</h1>
+            <h2>Adress</h2>
+            <ul>
+                <li>Medellin Chamber of Commerce</li>
+                <li>Cra. 46 #5282</li>
+                <li>La Candelaria, Medellín, Antioquia</li>
+            </ul>
+            <h2>Phone</h2>
+            <p><a href="tel:+573006211095">+(57) 300-6211095</a></p>
+            <h2>Email</h2>
+            <p><a href="mailto:medchamber@gmail.com">medchamber@gmail.com</a></p>
+        </section>
     </main>
 
     <footer>
@@ -89,5 +113,6 @@
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/directory.js"></script>
 </body>
 </html>

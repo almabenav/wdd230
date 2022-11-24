@@ -197,7 +197,8 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
 
 .btn-yellow a{text-decoration: none; color: black;}
 .btn-yellow{padding: 1% 4%; color: black; text-decoration: none; background-color: #FCA311; border-radius: 4px;}
-.btn-yellow:hover{background-color: #14213D; color: #E5E5E5; transform: scale(1.1);}
+.btn-yellow:hover{background-color: #14213D;}
+.btn-yellow a:hover{color: #E5E5E5;}
 
 .weather-info {width: 100%; display: flex; align-content: center;}
 .weather-info h3 {margin: auto; font-size: 1.7rem;}
@@ -217,7 +218,7 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
 	margin: auto;
 	margin-top: -0.5rem;
 	text-align: center;
-	width: 400px;
+	width: 350px;
 	padding: .7rem;
 	color: #E5E5E5;
 	background-color: #14213D;
@@ -286,7 +287,7 @@ figure img {
 	border-radius: 4px;
 }
 
-.top input, .top textarea{
+.top input, .top textarea, label.top{
 	display: block;
 	font-size: 13px;
 	width: 100%;
@@ -295,7 +296,7 @@ figure img {
 }
 
 .form-join h1, .form-join h2{color: #14213D;font-size: 20px;}
-textarea{height: 100px;}
+textarea.form-join{height: 100px;}
 fieldset{margin-top: 5px; border: none;}
 .form-join label {cursor: pointer;}
 .form-join label.top {display: block; padding-top: 1rem;}
@@ -320,6 +321,7 @@ form label.top input:required:valid {border-left: green solid 6px;}
 	padding: 1rem;
 	border: none;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 .submitBtn:hover{
@@ -386,3 +388,11 @@ div.cards p:nth-child(0){
 
 .list p {margin: 0;}
 .list img {display: none;}
+
+/*-----------------------------CONTACT PAGE-------------------------------*/
+
+.contact-form {background-color: #E5E5E5; box-shadow: 1px 1px 10px black; padding: 1rem; color: #14213D;}
+.contact-info { align-items: center; margin-top: 5rem;}
+.contact-info ul {list-style-type: none; padding: 0%;}
+.contact-info a {color: black;}
+iframe {margin-top: 1rem;}

@@ -110,4 +110,13 @@ width: 60%;
 
 .list h3{display: none;}
 
+/*-----------------------------CONTACT PAGE-------------------------------*/
+
+.contact-main {margin: 2vh auto; width: 100%; display: flex; justify-content: center;}
+
+.contact-form {width: 50%;}
+.contact-info {width: auto; height: auto;}
+
+section.contact-info {padding-left: 3rem;}
+
 }
