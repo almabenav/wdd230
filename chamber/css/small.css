@@ -90,9 +90,8 @@ nav ul {
 nav ul li a {
     display: block;
     color: black;
-    padding: .5rem 0;
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -134,6 +133,7 @@ footer a:hover {color: #FCA311;}
 /* --------------------------HOME PAGE---------------------------- */
 
 main {padding: 0.5rem 6vw 0.5rem 6vw;}
+.main-index h2 {font-size: 25px;}
 
 .event, .weather, .join, .hero, .spotlight1, .spotlight2, .newRelease {
 	background-color: #E5E5E5;
@@ -175,17 +175,18 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
 	justify-content: center;
 }
 
-.hero-txt button {
+.hero-txt a{
+	display: block;
 	border-radius: 15px;
 	border-style: none;
     padding: 6% 8%;
     background-color: #14213D;
+	text-decoration: none; color: #E5E5E5;
 }
-.hero-txt button a {text-decoration: none; color: #E5E5E5;}
-.hero-txt button a:hover{background: #14213D; color: #FCA311; transform: scale(1.1);}
+.hero-txt a:hover{background: #14213D; color: #FCA311; transform: scale(1.1);}
 .btn-blue:hover {background-color: #FCA311; color: black; transform: scale(1.1);}
 
-.join button, .yellow-btn {
+.join a, .yellow-btn {
 	font-family: 'Bebas Neue';
 	border-radius: 15px;
 	font-size: 20px;
@@ -195,10 +196,10 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
     background-color: #FCA311;
 }
 
+.join a {display: block; margin: auto; width: 65%;}
 .btn-yellow a{text-decoration: none; color: black;}
 .btn-yellow{padding: 1% 4%; color: black; text-decoration: none; background-color: #FCA311; border-radius: 4px;}
-.btn-yellow:hover{background-color: #14213D;}
-.btn-yellow a:hover{color: #E5E5E5;}
+.btn-yellow:hover{background-color: #14213D; color: #E5E5E5;}
 
 .weather-info {width: 100%; display: flex; align-content: center;}
 .weather-info h3 {margin: auto; font-size: 1.7rem;}
@@ -233,7 +234,7 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
 	background-color: #E5E5E5;
 	border: 1px solid #cfcfcf;
 }
-.description h1, .demography h2 {text-shadow: 2px 2px 0 black; 	color: #FCA311;}
+.description h1, .demography h2 {text-shadow: 2px 2px 0 black; color: #FCA311;}
 
 .images-container {margin: 50px auto 50px auto;}
 
