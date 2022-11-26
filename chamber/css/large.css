@@ -115,6 +115,7 @@ width: 60%;
     height: 50px;
 }
 
+.main-directory h1 {text-align: left;}
 .list h3{display: none;}
 
 /*-----------------------------CONTACT PAGE-------------------------------*/

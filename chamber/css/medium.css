@@ -122,6 +122,7 @@
         justify-items: center;
         align-content: center;
     }
+    .main-directory h1 {text-align: left;}
 
     /*-----------------------------CONTACT PAGE-------------------------------*/
 

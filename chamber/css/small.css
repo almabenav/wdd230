@@ -342,7 +342,7 @@ form label.top input:required:valid {border-left: green solid 6px;}
 
 /*-----------------------------DIRECTORY PAGE-------------------------------*/
 
-.main-directory h1 {margin-left: 1.5rem;}
+.main-directory h1 {margin-left: 1.5rem; text-align: center;}
 
 .menu {
 	margin: 1rem auto;
