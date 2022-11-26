@@ -30,7 +30,7 @@ function displayBusiness (business) {
   a.setAttribute("target", "_blank");
   a.textContent = business.website;
 
-  p1.textContent = `${business.adress}`;
+  p1.textContent = `${business.address}`;
   p2.textContent = `${business.phone}`;
   h3.textContent = `${business.name}`;
   
