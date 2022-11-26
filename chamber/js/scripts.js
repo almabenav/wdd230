@@ -37,4 +37,7 @@ if (dayNumber == 1 || dayNumber == 2 ) {
 }
 
 //Date form
-document.querySelector('#todayDate').textContent = now;
+const formDate = document.querySelector("#todayDate");
+if (formDate == null) {} else {
+    formDate.value = Date.now();
+}
