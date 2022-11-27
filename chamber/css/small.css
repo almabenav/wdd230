@@ -240,7 +240,7 @@ main {padding: 0.5rem 6vw 0.5rem 6vw;}
 	background-color: #E5E5E5;
 	border: 1px solid #cfcfcf;
 }
-.description h1, .demography h2 {text-shadow: 2px 2px 0 black; color: #FCA311;}
+/* .description h1, .demography h2 {text-shadow: 2px 2px 0 black; color: #14213D;} */
 
 .images-container {margin: 50px auto 50px auto;}
 
@@ -343,6 +343,7 @@ form label.top input:required:valid {border-left: green solid 6px;}
 /*-----------------------------DIRECTORY PAGE-------------------------------*/
 
 .main-directory h1 {margin-left: 1.5rem; text-align: center;}
+.main-directory h2 {font-family: 'Poppins'; font-size: 18.74px;}
 
 .menu {
 	margin: 1rem auto;

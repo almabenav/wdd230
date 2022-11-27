@@ -17,7 +17,7 @@ fetch(requestwebsite)
 
 function displayBusiness (business) {
   let card = document.createElement('div');
-  let h3 = document.createElement('h3');
+  let h2 = document.createElement('h2');
   let p1 = document.createElement('p');
   let p2 = document.createElement('p');
   let a = document.createElement('a')
@@ -32,10 +32,10 @@ function displayBusiness (business) {
 
   p1.textContent = `${business.address}`;
   p2.textContent = `${business.phone}`;
-  h3.textContent = `${business.name}`;
+  h2.textContent = `${business.name}`;
   
   card.appendChild(logo);
-  card.appendChild(h3);
+  card.appendChild(h2);
   card.appendChild(p1);
   card.appendChild(p2);
   card.appendChild(a);
