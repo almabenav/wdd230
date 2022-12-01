@@ -1,1 +1,50 @@
-@media only screen and (min-width: 64rem) {}
+@media only screen and (min-width: 64rem) {
+
+
+    .phone-contact, .mail-contact {display: inline;}
+    
+    /* ---------------NAV------------- */
+     
+    nav button {display: none;}
+
+    nav {
+        display: grid;
+        grid-template-columns: 20% 60%;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+    }
+
+    nav ul li a{display: inline; padding: .5rem 1rem;}
+
+
+
+    footer .contact {
+
+        display: block;
+    }
+
+    /* --------------------------HOME PAGE---------------------------- */
+   
+
+
+
+    .home-info {
+        display: flex;
+        padding: 3%;
+    }
+    .home-info p{
+        margin-top: ;
+        grid-row: 2;
+        padding: 2%;
+        background-color: var(--color-3);
+        margin-bottom: 0;
+      }
+    .home-info img {
+        margin-top: -60px;
+    }
+}

@@ -1,1 +1,44 @@
-@media only screen and (min-width: 40rem) {}
+@media only screen and (min-width: 40rem) {
+
+    main {padding: 0.5rem 6vw 1rem 6vw;}
+
+
+    header a, footer a{text-decoration: none; color: black;}
+
+
+
+
+    footer {
+        display: grid;
+        justify-items:normal;
+
+    }
+
+    footer .phone-contact, footer .mail-contact {display: inline;}
+    footer .botones {grid-row: 1; display: flex; justify-content: space-between;}
+    footer .contact {display: block; margin-left: 0;}
+
+    footer .logo {grid-row: 2; margin: auto;}
+    footer .baseFooter {grid-row: 3; margin: auto;}
+
+   /* --------------------------HOME PAGE---------------------------- */
+
+   .drink-div {
+    width: 80%;     
+    margin: 50px auto auto auto;
+    padding: 2%;
+    
+}
+
+   .arrow img{display: inline; width: 50%; margin: 0;}
+
+   .home-info p{
+    margin-top: 0;
+    grid-row: 2;
+    padding: 2%;
+    background-color: var(--color-3);
+    margin-bottom: 0;
+  }
+
+
+}

@@ -8,32 +8,125 @@
     <meta name="description" content="Bountiful Food Website for Final Project by Alma Benavides in WDD 230">
     <link rel="shortcut icon" href="images/favicon.ico">
 
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">   
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Mulish:wght@500&display=swap" rel="stylesheet">   
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
 </head>
 <body>
-    
     <header>
         <div>
-            <a href="tel:+573006211095">
-                <img src="images/"  loading="lazy" alt="telephone">
-            </a>
-            <a href="tel:+573006211095">+(57) 300-6211095</a>
-            <a href="mailto:medchamber@gmail.com">
-                <img src="" loading="lazy" alt="">
-            </a>
-            <a href="mailto:medchamber@gmail.com">medchamber@gmail.com</a><br>
+            <a href="tel:+573006211095"><img src="images/phone.png"  loading="lazy" alt="telephone"></a>
+            <a class="phone-contact" href="tel:+573006211095">+(57) 300-6211095</a>
+            <a href="mailto:medchamber@gmail.com"><img src="images/filled-message.png" loading="lazy" alt="mail"></a>
+            <a class="mail-contact" href="mailto:medchamber@gmail.com">medchamber@gmail.com</a><br>
         </div>
- 
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-new.png"  loading="lazy" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter-circled.png" loading="lazy" alt="twitter icon">
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube-play.png"  loading="lazy" alt="youtube icon">
+            </a>
+        </div>
     </header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo-transparent.png"  loading="lazy" alt="Bountiful Food logo">
+            </a>
+        </div>
+        <button id="hamburguerBtn"><span>&#9776;</span><span>x</span></button>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="Fresh.html">Fresh</a></li>
+            <li><a href="AboutUs.html">About Us</a></li> 
+        </ul>
+    </nav>
 
-    <main>
+    <main class="index-main">
+        <h1>Welcome to Bountiful Food</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/elaine-casap-qgHGDbbSNm8-unsplash1.jpg" style="width:100%" loading="lazy" alt="">
+              <div class="text desc">WE OFFER THE BEST PRODUCTS</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/julia-zolotova-M_xIaxQE3Ms-unsplash1.jpg" style="width:100%" loading="lazy" alt="">
+              <div class="text desc">ORGANIC PRODUCTS TO YOUR HOME</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/kaizen-nguy-n-jcLcWL8D7AQ-unsplash1.jpg" style="width:100%" loading="lazy" alt="">
+              <div class="text desc-btn"><a href="Fresh.html">Click here to choose your drink!</a></div>
+            </div>
+            
+            <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a> -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+        <br>
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <div class="drink-div">
+            <div class="drink"><img src="images/johanna-IKaFDABbfFY-unsplash1.jpg" alt="Fruit Drink" loading="lazy"></div>
+            <h2>Create your drink here!</h2>
+            <div class="arrow"><img src="images/long-arrow-right.png" alt="arrow" loading="lazy"></div>
+            <a class="button-pink" href="Fresh.html">Click Here!</a>
+        </div>
+
+        <div class="home-info">
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus. Donec sollicitudin molestie malesuada.
+                Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus.
+            </p>
+            <img src="images/christopher-ruel-yuDvsm1-lAw-unsplash.jpg" alt="Carlsbad Coast" loading="lazy">
+            
+        </div>
+
+        <div class="weather">
+            <div><img src="https://placehold.jp/150x200.png" alt="aa" loading="lazy"></div>
+            <div><img src="https://placehold.jp/150x200.png" alt="aa" loading="lazy"></div>
+            <div><img src="https://placehold.jp/150x200.png" alt="aa" loading="lazy"></div>
+        </div>
 
     </main>
 
+    <footer>
+        <div class="botones">
+            <div class="contact">
+                <a href="tel:+573006211095"><img src="images/phone.png"  loading="lazy" alt="telephone"></a>
+                <a class="phone-contact" href="tel:+573006211095">+(57) 300-6211095</a> <br>
+                <a href="mailto:medchamber@gmail.com"><img src="images/filled-message.png" loading="lazy" alt="mail"></a>
+                <a class="mail-contact" href="mailto:medchamber@gmail.com">medchamber@gmail.com</a><br>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook-new.png"  loading="lazy" alt="fb icon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter-circled.png" loading="lazy" alt="twitter icon"></a>
+                <a href="https://youtube.com" target="_blank"><img src="images/youtube-play.png"  loading="lazy" alt="youtube icon"></a>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo-transparent.png"  loading="lazy" alt="Bountiful Food logo"></a>
+        </div>
+        <hr>
+        <div class="baseFooter"><p>&copy;<span id="year">20xx</span> Bountiful Food | <b>Alma Benavides</b> | WDD 230 Final Project | <span id="lastModified"></span></p></div>
+    </footer>
 
+    <script src="js/scripts.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 </html>
