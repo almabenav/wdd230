@@ -152,15 +152,9 @@ h1 {text-align: center; margin: auto;}
   margin: auto;
 }
 
-.weather {
-  display: flex;
-  justify-content: center;
-}
-.weather div{
-  padding: 2%;
-}
-.weather img{ width: 100%; border-radius: 20px;
-}
+.weather {display: grid;}
+.weather div{margin: auto;padding: 2%;}
+.weather img{ width: 100%; border-radius: 20px;}
 
 
 

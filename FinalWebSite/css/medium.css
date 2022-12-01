@@ -40,5 +40,9 @@
     margin-bottom: 0;
   }
 
+  .weather {
+    display: flex;
+    justify-content: center;
+  }
 
 }
