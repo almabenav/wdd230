@@ -37,19 +37,50 @@
     <nav>
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo-transparent.png"  loading="lazy" alt="Bountiful Food logo">
+                <img src="images/logo_sinfondo.png"  loading="lazy" alt="Bountiful Food logo">
             </a>
         </div>
         <button id="hamburguerBtn"><span>&#9776;</span><span>x</span></button>
         <ul id="primaryNav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="Fresh.html">Fresh</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="Fresh.html">Fresh</a></li>
             <li><a href="AboutUs.html">About Us</a></li> 
         </ul>
     </nav>
 
     <main>
+        <h1>Create your fruit drink mix</h1>
+        <form class="form-drink" action="">
+            <fieldset class="contact-form">
+                <legend>Contact Info</legend>
+                <label class="top" for="name">First name* <input type="text" name="name" id="name" required></label>
+                <label class="top" for="email">Email* <input type="email" name="email" id="email" placeholder="example@gmail.com" required></label>
+                <label class="top" for="phone">Phone-number* <input type="tel" name="phone" id="phone" required></label>
+            </fieldset>
+            <fieldset class="flavor-form">
+                <legend>Choose your drink flavor</legend>
+                <div class="flavors">
+                    <div class="tangerine">
+                        <label for="orange-flavor"> <input type="radio" name="flavor" id="orange-flavor" > Orange</label>
+                        <img src="images/tangerine-newt-Ny5YFzSkf0E-unsplash1.jpg" alt="tangerine" loading="lazy">
+                    </div>
+                    <div class="redFruits">
+                        <label for="redFruits-flavor"> <input type="radio" name="flavor" id="redFruits-flavor" > Red Fruits</label>
+                        <img src="images/alexander-sergienko-VMMfXKElJdw-unsplash1.jpg" alt="redFruits">
+                    </div>
+                    
+                    <div class="kiwi">
+                        <label for="kiwi-flavor"> <input type="radio" name="flavor" id="kiwi-flavor" > Kiwi explosion</label>
+                        <img src="images/tangerine-newt-a9rxefN9vgY-unsplash1.jpg" alt="kiwi" loading="lazy">
+                    </div>
+                </div>
+                <div>
+                    <label class="top" for="special-instructions">Add special instructions (if needed)<textarea id="special-instructions" name="instructions"></textarea></label>
+                </div>
+            </fieldset>
 
+            <input class="submitBtn button-pink" type="submit" value="Done">
+        </form>
     </main>
 
     <footer>
@@ -67,13 +98,14 @@
             </div>
         </div>
         <div class="logo">
-            <a href="index.html"><img src="images/logo-transparent.png"  loading="lazy" alt="Bountiful Food logo"></a>
+            <img src="images/logo_sinfondo.png"  loading="lazy" alt="Bountiful Food logo">
         </div>
         <hr>
         <div class="baseFooter"><p>&copy;<span id="year">20xx</span> Bountiful Food | <b>Alma Benavides</b> | WDD 230 Final Project | <span id="lastModified"></span></p></div>
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src=""></script>
 
 
 </body>
