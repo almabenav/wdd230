@@ -1,13 +1,48 @@
 {
   "fruit": [
       {
-        "name": "Orange"
+        "name": "Orange",
+        "image": "https://almabenav2.github.io/wdd230/BountifulFood/images/tangerine.jpg",
+        "nutritions": {
+          "carbohydrates": 12,
+          "protein": 0.9,
+          "fat": 0.5,
+          "calories": 47,
+          "sugar": 9
+        }
       },
       {
-        "name": "Red Fruits"
+        "name": "Red Fruits",
+        "image": "https://almabenav2.github.io/wdd230/BountifulFood/images/strawberry.jpg",
+        "nutritions": {
+          "carbohydrates": 7.68,
+          "protein": 0.5,
+          "fat": 0.1,
+          "calories": 25,
+          "sugar": 4
+        }
       },
       {
-        "name": "Kiwi explosion"
+        "name": "Kiwi Explosion",
+        "image": "https://almabenav2.github.io/wdd230/BountifulFood/images/kiwi.jpg",
+        "nutritions": {
+          "carbohydrates": 15,
+          "protein": 1.1,
+          "fat": 0.7,
+          "calories": 45,
+          "sugar": 9
+        }
+      },
+      {
+        "name": "Watermelon Acid",
+        "image": "https://almabenav2.github.io/wdd230/BountifulFood/images/watermelon.jpg",
+        "nutritions": {
+          "carbohydrates": 8,
+          "protein": 0.6,
+          "fat": 0.2,
+          "calories": 30,
+          "sugar": 6
+        }
       }
     ]
 }
