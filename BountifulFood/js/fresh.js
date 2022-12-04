@@ -1,56 +1,31 @@
-const requestwebsite = 'https://almabenav2.github.io/wdd230/BountifulFood/data.json';
-const cards = document.querySelector('.cards');
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector(".cards");
+const requestURL = "https://almabenav2.github.io/wdd230/BountifulFood/json/data.json"
+const cardsImage = document.querySelector('.cardsImage');
 
-fetch(requestwebsite)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject); 
-    const business = jsonObject['business'];
-    business.forEach(displayBusiness);  
-  });
+async function getImages(){
+    const response = await fetch(requestURL);
+    const data = await response.json();
+    data.forEach(image => {displayImages(image)});
+  }
 
-
-function displayBusiness (business) {
-  let card = document.createElement('div');
-  let h2 = document.createElement('h2');
-  let p1 = document.createElement('p');
-  let p2 = document.createElement('p');
-  let a = document.createElement('a')
-  let logo = document.createElement('img');
+  function displayImages(image) {
   
-  logo.setAttribute('src', business.logourl);
-  logo.setAttribute('alt',` ${business.name} logo`)
-  logo.setAttribute('loading', 'lazy');
-  a.setAttribute('href', business.website);
-  a.setAttribute("target", "_blank");
-  a.textContent = business.website;
+    // Create elements to add to the document
+    let cardsImage = document.createElement('figure');
+    let photo = document.createElement('img');
 
-  p1.textContent = `${business.address}`;
-  p2.textContent = `${business.phone}`;
-  h2.textContent = `${business.name}`;
+    
+    // 
+    
+    photo.setAttribute('src', `image.image`);
+    photo.setAttribute('alt', `photo of ${image.name} `);
+    photo.setAttribute('loading', 'lazy');
+
+
+    card.appendChild(photo);
+
+ // Add/append the existing HTML div with the cards class with the section(card)
+    //document.querySelector('div.cards').appendChild(card);
+    cardsImage.appendChild(cardsImage);
   
-  card.appendChild(logo);
-  card.appendChild(h2);
-  card.appendChild(p1);
-  card.appendChild(p2);
-  card.appendChild(a);
-  
-  document.querySelector('div.cards').appendChild(card);
 }
-
-gridbutton.addEventListener("click", () => {
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList);
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
-}
+getImages();

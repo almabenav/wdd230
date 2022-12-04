@@ -37,10 +37,23 @@
     margin-bottom: 0;
   }
 
-  .weather {
+  .drink-div {
     display: flex;
-    justify-content: center;
+    padding: 2%;
   }
+  .drink img {width: 90%;}
+  .drink-div h2 {margin-left: -70px;}
+
+
+  .weather-container {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    align-items: center;
+  }
+
+  .weather{width: 100%; height: 90%;}
+  .forecast{width: 100%; display: flex;}
 
 
 /* --------------------------FRESH PAGE---------------------------- */

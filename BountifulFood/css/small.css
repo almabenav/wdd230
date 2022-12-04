@@ -105,22 +105,21 @@ footer .botones img {width: 30px; }
 
 main {padding: 1rem 0vw 1rem 0vw;}
 
-h1 {text-align: center; margin: auto; color: var(--color-2);}
+h1 {text-align: center; margin: 1.5% auto ; color: var(--color-2);}
 
 .drink-div {
     width: 80%;
     margin: 50px auto auto auto ;
-    display: flex;
+    display: grid;
     text-align: center;
     align-items: center;
     padding: 2%;
 }
 
-.drink-div h2 {margin-left: -70px; font-size: 20px; color: var(--color-2);}
-.drink img {width: 90%; box-shadow: -20px -20px 1px var(--color-4); border-radius: 10px;}
+.drink-div h2 {font-size: 20px; color: var(--color-2);}
+.drink-div h3 {color: var(--color-2);}
+.drink img {width: 50%; box-shadow: -20px -20px 1px var(--color-4); border-radius: 10px;}
 .arrow img{display: none;}
-
-
 
 .button-pink  {
     text-decoration: none;
@@ -152,9 +151,24 @@ h1 {text-align: center; margin: auto; color: var(--color-2);}
   margin: auto;
 }
 
-.weather {display: grid;}
-.weather div{margin: auto;padding: 2%;}
-.weather img{ width: 100%; border-radius: 20px;}
+.rounded-corners {border-radius: 10px;}
+.weather, .forecast-day {background-color: #e5e5e5;}
+
+.weather-info {
+  width: 100%; height: 50%; 
+  display: flex;  
+  justify-content: center; 
+  align-items: center;
+}
+.weather-info{height: 20%;}
+.weather-info h3 {font-size: 1.7rem;}
+
+.weather-container {margin: auto; width: 90%; display: grid; text-align: center;}
+.weather-container div{padding: 2%;}
+
+div.forecast-day{margin: 2%; width: 100%;}
+.weather-name p{margin: 0;}
+.weather-name {margin: 2%;}
 
 
 /* Slideshow container */
@@ -297,7 +311,7 @@ form label.top input:required:valid {border-left: rgb(202, 252, 202) solid 6px;}
 /* --------------------------ABOUT US PAGE---------------------------- */
 
 .aboutUs-main h2{color: var(--color-2);}
-.logo-aboutUsPage{text-align: center; padding: 2%; margin-top: 30px; background-color: var(--color-2); }
+.logo-aboutUsPage{width: 50%; text-align: center; padding: 2%; margin: auto; background-color: var(--color-2); }
 
 .info-aboutUs{width: 100%;display: grid;}
 div .aboutUs{text-align: center; margin-top: 30px;}

@@ -19,7 +19,7 @@
         <div>
             <a href="tel:+573006211095"><img src="images/phone.png"  loading="lazy" alt="telephone"></a>
             <a class="phone-contact" href="tel:+573006211095">+(57) 300-6211095</a>
-            <a href="mailto:medchamber@gmail.com"><img src="images/filled-message.png" loading="lazy" alt="mail"></a>
+            <a href="mailto:bountifulfoodcb@gmail.com"><img src="images/filled-message.png" loading="lazy" alt="mail"></a>
             <a class="mail-contact" href="mailto:bountifulfoodcb@gmail.com">bountifulfoodcb@gmail.com</a><br>
         </div>
         <div class="social">
@@ -85,7 +85,10 @@
 
         <div class="drink-div">
             <div class="drink"><img src="images/johanna-IKaFDABbfFY-unsplash1.jpg" alt="Fruit Drink" loading="lazy"></div>
-            <h2>make your own fruit drink mix!</h2>
+            <div>
+                <h3>Drinks purchased:</h3>
+                <h2>make your own fruit drink mix!</h2>
+            </div>
             <div class="arrow"><img src="images/long-arrow-right.png" alt="arrow" loading="lazy"></div>
             <a class="button-pink" href="Fresh.html">Click Here!</a>
         </div>
@@ -99,11 +102,24 @@
             <img src="images/christopher-ruel-yuDvsm1-lAw-unsplash.jpg" alt="Carlsbad Coast" loading="lazy">
             
         </div>
-
-        <div class="weather">
-            <div><img src="https://placehold.jp/150x200.png" alt="aa" loading="lazy"></div>
-            <div><img src="https://placehold.jp/150x200.png" alt="aa" loading="lazy"></div>
-            <div><img src="https://placehold.jp/150x200.png" alt="aa" loading="lazy"></div>
+        <div class="weather-container">
+            <div class="weather rounded-corners">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <img src="https://placehold.jp/80x80.png" alt="current weather" id="weather-icon" loading="lazy">
+                    <h3><span id="current-temp"></span>&deg;C</h3>
+                    <div class="weather-name">
+                        <p>Carlsbad, CA</p>
+                        <p><span id="description">weather condition</span></p>
+                    </div>
+                </div>
+                <hr>
+                <p>current wind speed is <span id="speed">00</span></p>
+                <p>wind child is<span id="chill">00</span></p>
+                <p>Humidity is <span id="humidity">00</span>%</p>
+                <p class="weather-link">Data provided by: <a href="https://openweathermap.org/">openweathermap.org</a></p>
+            </div>
+            <div id="weather-forecast" class="forecast"></div>
         </div>
 
     </main>
@@ -113,7 +129,7 @@
             <div class="contact">
                 <a href="tel:+573006211095"><img src="images/phone.png"  loading="lazy" alt="telephone"></a>
                 <a class="phone-contact" href="tel:+573006211095">+(57) 300-6211095</a> <br>
-                <a href="mailto:medchamber@gmail.com"><img src="images/filled-message.png" loading="lazy" alt="mail"></a>
+                <a href="mailto:bountifulfoodcb@gmail.com"><img src="images/filled-message.png" loading="lazy" alt="mail"></a>
                 <a class="mail-contact" href="mailto:bountifulfoodcb@gmail.com">bountifulfoodcb@gmail.com</a><br>
             </div>
             <div class="social">
@@ -131,5 +147,7 @@
 
     <script src="js/scripts.js"></script>
     <script src="js/slideshow.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/weather-threeDays.js"></script>
 </body>
 </html>
