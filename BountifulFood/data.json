@@ -1,48 +1,101 @@
-{
-  "fruit": [
-      {
-        "name": "Orange",
-        "image": "https://almabenav2.github.io/wdd230/BountifulFood/images/tangerine.jpg",
-        "nutritions": {
-          "carbohydrates": 12,
-          "protein": 0.9,
-          "fat": 0.5,
-          "calories": 47,
-          "sugar": 9
-        }
-      },
-      {
-        "name": "Red Fruits",
-        "image": "https://almabenav2.github.io/wdd230/BountifulFood/images/strawberry.jpg",
-        "nutritions": {
-          "carbohydrates": 7.68,
-          "protein": 0.5,
-          "fat": 0.1,
-          "calories": 25,
-          "sugar": 4
-        }
-      },
-      {
-        "name": "Kiwi Explosion",
-        "image": "https://almabenav2.github.io/wdd230/BountifulFood/images/kiwi.jpg",
-        "nutritions": {
-          "carbohydrates": 15,
-          "protein": 1.1,
-          "fat": 0.7,
-          "calories": 45,
-          "sugar": 9
-        }
-      },
-      {
-        "name": "Watermelon Acid",
-        "image": "https://almabenav2.github.io/wdd230/BountifulFood/images/watermelon.jpg",
-        "nutritions": {
-          "carbohydrates": 8,
-          "protein": 0.6,
-          "fat": 0.2,
-          "calories": 30,
-          "sugar": 6
-        }
-      }
-    ]
-}
+[
+  {
+    "name": "Strawberry",
+    "id": 2,
+    "nutritions": {
+      "carbohydrates": 5.5,
+      "protein": 0.8,
+      "fat": 0.4,
+      "calories": 29,
+      "sugar": 5.4
+    }
+  },
+  {
+    "name": "Cherry",
+    "id": 3,
+    "nutritions": {
+      "carbohydrates": 12,
+      "protein": 1,
+      "fat": 0.3,
+      "calories": 50,
+      "sugar": 8
+    }
+  },
+  {
+    "name": "Pineapple",
+    "id": 4,
+    "nutritions": {
+      "carbohydrates": 13.12,
+      "protein": 0.54,
+      "fat": 0.12,
+      "calories": 50,
+      "sugar": 9.85
+    }
+  },
+  {
+    "name": "Tangerine",
+    "id": 5,
+    "nutritions": {
+      "carbohydrates": 8.3,
+      "protein": 0,
+      "fat": 0.4,
+      "calories": 45,
+      "sugar": 9.1
+    }
+  },
+  {
+    "name": "Kiwi",
+    "id": 6,
+    "nutritions": {
+      "carbohydrates": 15,
+      "protein": 1.1,
+      "fat": 0.5,
+      "calories": 61,
+      "sugar": 9
+    }
+  },
+  {
+    "name": "Watermelon",
+    "id": 7,
+    "nutritions": {
+    "carbohydrates": 8,
+    "protein": 0.6,
+    "fat": 0.2,
+    "calories": 30,
+    "sugar": 6
+    }
+  },
+  {
+    "name": "Lemon",
+    "id": 8,
+    "nutritions": {
+      "carbohydrates": 9,
+      "protein": 1.1,
+      "fat": 0.3,
+      "calories": 29,
+      "sugar": 2.5
+    }
+  },
+  {
+    "name": "Orange",
+    "id": 9,
+    "nutritions": {
+      "carbohydrates": 8.3,
+      "protein": 1,
+      "fat": 0.2,
+      "calories": 43,
+      "sugar": 8.2
+    }
+  },
+  {
+    "name": "Banana",
+    "id": 10,
+    "nutritions": {
+      "carbohydrates": 22,
+      "protein": 1,
+      "fat": 0.2,
+      "calories": 96,
+      "sugar": 17.2
+    }
+  }
+]

@@ -282,24 +282,18 @@ legend {text-align: center; font-family: 'Eczar'; font-size: 25px; color: var(--
 .flavors {
   margin: auto;
   display: block;
-  padding: 2%;
+  text-align: center;
+  justify-content: center;
 }
-
-.tangerine, .redFruits, .kiwi {
-  display: grid;
-  padding: 2%;
-}
-.tangerine img, .redFruits img, .kiwi img{
-  width: 100%;
-  margin-top: 10px;
+.flavors label {color: #315E50; font-family: 'Mulish'; font-size: 15px;}
+select#fruit1, select#fruit2, select#fruit3 {
+  background-color: var(--color-5); 
+  border: var(--color-5); padding: 2%; 
   border-radius: 10px;
 }
-.flavors div{width: 100%;
-}
-.flavors label {background-color: var(--color-5); padding: 4%;  border-radius: 10px; text-align: center;}
-.tangerine label { width: 50%;}
-.redFruits label { width: 60%;}
-.kiwi label { width: 70%;}
+
+.fruits-img {width: 100%; display: flex; text-align: center; padding: 2%;}
+.fruits-img picture img {width: 80%; border-radius: 10px; text-align: center; margin: auto; justify-items: center;}
 
 textarea#special-instructions {width: 100%;}
 form input {border: 1px solid var(--color-3);}
@@ -311,7 +305,7 @@ form label.top input:required:valid {border-left: rgb(202, 252, 202) solid 6px;}
 /* --------------------------ABOUT US PAGE---------------------------- */
 
 .aboutUs-main h2{color: var(--color-2);}
-.logo-aboutUsPage{width: 50%; text-align: center; padding: 2%; margin: auto; background-color: var(--color-2); }
+.logo-aboutUsPage{width: 60%; text-align: center; padding: 2%; margin: auto; background-color: var(--color-2); }
 
 .info-aboutUs{width: 100%;display: grid;}
 div .aboutUs{text-align: center; margin-top: 30px;}

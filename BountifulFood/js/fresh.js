@@ -1,31 +1,22 @@
-const requestURL = "https://almabenav2.github.io/wdd230/BountifulFood/json/data.json"
-const cardsImage = document.querySelector('.cardsImage');
+const requestURL = 'data.json';
 
-async function getImages(){
-    const response = await fetch(requestURL);
-    const data = await response.json();
-    data.forEach(image => {displayImages(image)});
+fetch(requestURL) 
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    populateSelectControls(jsonObject, '#fruit1');
+    populateSelectControls(jsonObject, '#fruit2');
+    populateSelectControls(jsonObject, '#fruit3');
+  });
+
+  function populateSelectControls(drinks, controlId) {
+    let select = document.querySelector(controlId)
+    for(let x in drinks) {
+      let option =  document.createElement("option")
+      option.innerHTML = drinks[x].name;
+      option.value = drinks[x].name;
+      select.appendChild(option);
+    }
+    select.selectedIndex = -1;
   }
-
-  function displayImages(image) {
-  
-    // Create elements to add to the document
-    let cardsImage = document.createElement('figure');
-    let photo = document.createElement('img');
-
-    
-    // 
-    
-    photo.setAttribute('src', `image.image`);
-    photo.setAttribute('alt', `photo of ${image.name} `);
-    photo.setAttribute('loading', 'lazy');
-
-
-    card.appendChild(photo);
-
- // Add/append the existing HTML div with the cards class with the section(card)
-    //document.querySelector('div.cards').appendChild(card);
-    cardsImage.appendChild(cardsImage);
-  
-}
-getImages();
