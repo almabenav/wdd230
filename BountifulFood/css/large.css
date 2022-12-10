@@ -1,6 +1,5 @@
 @media only screen and (min-width: 64rem) {
 
-
     .phone-contact, .mail-contact {display: inline;}
     
     /* ---------------NAV------------- */
@@ -21,8 +20,6 @@
 
     nav ul li a{display: inline; padding: .5rem 1rem;}
 
-
-
     footer .contact {
 
         display: block;
@@ -30,15 +27,11 @@
 
     /* --------------------------HOME PAGE---------------------------- */
    
-
-
-
     .home-info {
         display: flex;
         padding: 3%;
     }
     .home-info p{
-        margin-top: ;
         grid-row: 2;
         padding: 2%;
         background-color: var(--color-3);

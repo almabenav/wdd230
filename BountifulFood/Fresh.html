@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Food | Home</title>
+    <title>Bountiful Food | Fresh</title>
     <meta name="description" content="Bountiful Food Website for Final Project by Alma Benavides in WDD 230">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -37,7 +37,7 @@
     <nav>
         <div class="logo">
             <a href="Index.html">
-                <img src="images/logo_sinfondo.png"  loading="lazy" alt="Bountiful Food logo">
+                <img src="images/logo_page.webp"  loading="lazy" alt="Bountiful Food logo">
             </a>
         </div>
         <button id="hamburguerBtn"><span>&#9776;</span><span>x</span></button>
@@ -50,66 +50,66 @@
 
     <main>
         <h1>Create your fruit drink mix</h1>
-        <form class="form-drink" action="">
-            <fieldset class="contact-form">
-                <legend>Contact Info</legend>
-                <label class="top" for="name">First name* <input type="text" name="name" id="name" required></label>
-                <label class="top" for="email">Email* <input type="email" name="email" id="email" placeholder="example@gmail.com" required></label>
-                <label class="top" for="phone">Phone-number* <input type="tel" name="phone" id="phone" required></label>
-            </fieldset>
-            <!-- <fieldset class="flavor-form">
-                <legend>Choose your drink flavor</legend>
-                <div class="flavors"> -->
-                    <!-- <div class="tangerine">
-                        <label for="orange-flavor"> <input type="radio" name="flavor" id="orange-flavor" ><span>Orange</span></label>
-                        <img src="images/tangerine.jpg" alt="tangerine" loading="lazy">
+        <div id="form-input"> 
+            <form class="form-drink" onsubmit="openForm();return false;">
+                <fieldset class="contact-form">
+                    <legend>Contact Info</legend>
+                    <label class="top" for="fname">First name* <input type="text" name="fname" id="fname" required></label>
+                    <label class="top" for="email">Email* <input type="email" name="email" id="email" placeholder="example@gmail.com" required></label>
+                    <label class="top" for="phone">Phone-number* <input type="tel" name="phone" id="phone" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose the fruits to your drink</legend>
+                    <div class="fruits-img">
+                        <picture><img class="fruit-img" src="images/tangerine.jpg" alt="tangerine" loading="lazy"></picture>
+                        <picture><img class="fruit-img" src="images/strawberry.jpg" alt="strawberry"></picture>
+                        <picture><img class="fruit-img" src="images/kiwi.jpg" alt="kiwi" loading="lazy"></picture>
                     </div>
-                    <div class="redFruits">
-                        <label for="redFruits-flavor"> <input type="radio" name="flavor" id="redFruits-flavor" > Red Fruits</label>
-                        <img src="images/strawberry.jpg" alt="redFruits">
+                    <div class="flavors">
+                        <label class="top">1.
+                            <select id="fruit1" name="fruit1"></select>
+                        </label>
+                        <label class="top">2.
+                            <select id="fruit2" name="fruit2"></select>
+                        </label>
+                        <label class="top">3.
+                            <select id="fruit3" name="fruit3"></select>
+                        </label>
                     </div>
-                    
-                    <div class="kiwi">
-                        <label for="kiwi-flavor"> <input type="radio" name="flavor" id="kiwi-flavor" > Kiwi explosion</label>
-                        <img src="images/kiwi.jpg" alt="kiwi" loading="lazy">
-                    </div> -->
-                    <!-- <div>
-                        <label for="orange-flavor"> <input type="radio" name="flavor" id="orange-flavor" ><span>Orange</span></label>
-                        <label for="redFruits-flavor"> <input type="radio" name="flavor" id="redFruits-flavor" > Red Fruits</label>
-                        <label for="kiwi-flavor"> <input type="radio" name="flavor" id="kiwi-flavor" > Kiwi explosion</label>
+                    <div>
+                        <label class="top" for="instructions">Add special instructions (if needed)<textarea id="instructions" name="instructions"></textarea></label>
                     </div>
-                    <div class="cards">
-
-                    </div>
-                </div>
-                <div>
-                    <label class="top" for="special-instructions">Add special instructions (if needed)<textarea id="special-instructions" name="instructions"></textarea></label>
-                </div>
-            </fieldset> -->
-            <fieldset>
-                <legend>Choose the fruits to your drink</legend>
-                <div class="fruits-img">
-                    <picture><img class="fruit-img" src="images/tangerine.jpg" alt="tangerine" loading="lazy"></picture>
-                    <picture><img class="fruit-img" src="images/strawberry.jpg" alt="redFruits"></picture>
-                    <picture><img class="fruit-img" src="images/kiwi.jpg" alt="kiwi" loading="lazy"></picture>
-                </div>
-                <div class="flavors">
-                    <label class="top">1.
-                        <select id="fruit1" name="fruit1"></select>
-                    </label>
-                    <label class="top">2.
-                        <select id="fruit2" name="fruit2"></select>
-                    </label>
-                    <label class="top">3.
-                        <select id="fruit3" name="fruit3"></select>
-                    </label>
-                </div>
-                <div>
-                    <label class="top" for="special-instructions">Add special instructions (if needed)<textarea id="special-instructions" name="instructions"></textarea></label>
-                </div>
-            </fieldset>
-            <input class="submitBtn button-pink" type="submit" value="Done">
-        </form>
+                </fieldset>
+                <input id="submit-button" class="submitBtn button-pink" type="submit" value="Done">
+            </form>
+        </div>
+        <div id="form-output">
+            <form action="#" class="form-data">
+              <fieldset class="order">
+                <legend>Your order</legend>
+                <h1>Contact Info</h1>
+                <p id="order-fname"></p>
+                <p id="order-email"></p>
+                <p id="order-phone"></p>
+                <p id="order-date"></p>
+                <br>
+                <h1>Fruit</h1>
+                <p id="order-fruit1"></p>
+                <p id="order-fruit2"></p>
+                <p id="order-fruit3"></p>
+                <p id="order-instructions"></p>
+              </fieldset>
+              <fieldset class="nutrition">
+                <legend>Nutrition</legend>
+                <h1>Calories Total: <span id="calories"></span></h1>
+                <p>Carbs <span id="carbs"></span>(g)</p>
+                <p>Protein <span id="protein"></span>(g)</p>
+                <p>Sugar <span id="sugar"></span>(g)</p>
+                <p>Fat <span id="fat"></span>(g)</p>
+              </fieldset>
+              <button type="button" class="submitBtn button-pink" onclick="closeForm()">Close</button>
+            </form>
+        </div>
     </main>
 
     <footer>
@@ -127,7 +127,7 @@
             </div>
         </div>
         <div class="logo">
-            <img src="images/logo_sinfondo.png"  loading="lazy" alt="Bountiful Food logo">
+            <img src="images/logo_page.webp"  loading="lazy" alt="Bountiful Food logo">
         </div>
         <hr>
         <div class="baseFooter"><p>&copy;<span id="year">20xx</span> Bountiful Food | <b>Alma Benavides</b> | WDD 230 Final Project | Last Modified: <span id="lastTimeModified"></span></p></div>
@@ -135,7 +135,6 @@
 
     <script src="js/scriptsMain.js"></script>
     <script src="js/fresh.js"></script>
-
-
+    <script src="js/fresh-event.js"></script>
 </body>
 </html>

@@ -1,16 +1,16 @@
-const requestURL = 'data.json';
+const requestURL = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 
 fetch(requestURL) 
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-    populateSelectControls(jsonObject, '#fruit1');
-    populateSelectControls(jsonObject, '#fruit2');
-    populateSelectControls(jsonObject, '#fruit3');
+    selectControls(jsonObject, '#fruit1');
+    selectControls(jsonObject, '#fruit2');
+    selectControls(jsonObject, '#fruit3');
   });
 
-  function populateSelectControls(drinks, controlId) {
+  function selectControls(drinks, controlId) {
     let select = document.querySelector(controlId)
     for(let x in drinks) {
       let option =  document.createElement("option")
