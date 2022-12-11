@@ -3,6 +3,7 @@
     main {padding: 0.5rem 6vw 1rem 6vw;}
 
     header a, footer a{text-decoration: none; color: black;}
+    nav .logo img {width: 180px; padding: 2%;} 
 
     footer {
         display: grid;
