@@ -29,7 +29,7 @@ function orderInfo(firstName, email, phone, date, fruit1, fruit2, fruit3, instru
     document.getElementById("order-fruit2").textContent = fruit2;
     document.getElementById("order-fruit3").textContent = fruit3;
     document.getElementById("order-instructions").textContent = instructions;
-    document.getElementById("order-date").textContent = `order time: ${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`;
+    document.getElementById("order-date").textContent = `order date: ${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`;
 }
   
 function nutritionInfo(fruit1, fruit2, fruit3) {
