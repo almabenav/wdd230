@@ -1,132 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medellin Chamber of Commerce</title>
-    <meta name="description" content="Medellin Chamber of Commerce Website for Alma Benavides in WDD 230">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta
+      name="description"
+      content="Medellin Chamber of Commerce Website for Alma Benavides in WDD 230"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap" rel="stylesheet">    <link href="css/small.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/small.css" rel="stylesheet">
-    <link href="css/medium.css" rel="stylesheet">
-    <link href="css/large.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
     <div id="banner">
-        <p>🤝🏼 Join us for the chamber meet and greet on Wednesday at 7:00 p.m.</p>
+      <p>
+        🤝🏼 Join us for the chamber meet and greet on Wednesday at 7:00 p.m.
+      </p>
     </div>
     <header>
-        <div class="logo">
-            <div>
-                <a href="index.html">
-                    <img src="images/logo2.webp"  loading="lazy" alt="Medellin Chamber logo ">
-                </a>
-            </div>
-            <section class="headings">
-                <h2>Medellin Chamber of Commerce</h2>
-                <h2 class="slogan">your best partner!</h2>
-            </section>
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.webp"  loading="lazy" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.webp" loading="lazy" alt="twitter icon">
-                </a>
-            </div>
+      <div class="logo">
+        <div>
+          <a href="index.html">
+            <img
+              src="images/logo2.webp"
+              loading="lazy"
+              alt="Medellin Chamber logo "
+            />
+          </a>
         </div>
-        <div class="date"></div>
+        <section class="headings">
+          <h2>Medellin Chamber of Commerce</h2>
+          <h2 class="slogan">your best partner!</h2>
+        </section>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.webp" loading="lazy" alt="fb icon" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.webp" loading="lazy" alt="twitter icon" />
+          </a>
+        </div>
+      </div>
+      <div class="date"></div>
     </header>
     <nav>
-        <button id="hamburguerBtn"><span>&#9776;</span><span>x</span></button>
-        <ul id="primaryNav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>    
-        </ul>
+      <button id="hamburguerBtn"><span>&#9776;</span><span>x</span></button>
+      <ul id="primaryNav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
     <main class="main-index">
-        <h1>Home</h1>
-        <div class="mainGrid">
-            <div class="hero">
-                <div class="hero-txt">
-                    <h2>Welcome to Medellin</h2>
-                    <a href="join.html">Join the Chamber</a>
-                </div>
-            </div>
-            <div class="event">
-                <h2>Ribbon Cutting</h2>
-                <h3>🔹 The Diamond Shack</h3>
-                <p>Contact us for the grand opening of The Diamond Shack, Thursday at 1:00 pm. <a href="contact.html">More Info...</a></p>
-            </div>
-            <div class="weather">
-                <h2>Current Weather</h2>
-                <div class="weather-info">
-                    <img src="https://placehold.jp/80x80.png" alt="current weather" id="weather-icon" loading="lazy">
-                    <h3><span id="current-temp"></span>&deg;C</h3>
-                </div>
-                <h3><span id="description">weather condition</span></h3>
-                <hr>
-                <p>current wind speed is <span id="speed">00</span></p>
-                <p>wind child is<span id="chill">00</span></p>
-                <p class="weather-link">Data provided by: <a href="https://openweathermap.org/">openweathermap.org</a></p>
-            </div>
-            <div class="newRelease">
-                <h2>new release</h2>
-                <p>The Chamber developed an election software that allows the electronic voting service in person, always guaranteeing security and transparency in the election process of the Board of Directors and Statutory Auditor. The counting of votes will be transmitted live from the El Poblado Business Center.</p>
-            </div>
-            <div class="spotlight">
-                <div class="spot-1"></div>
-                <div class="spot-2"></div>
-            </div> 
-            <div class="join">
-                <a class="btn-yellow" href="join.html">Join Us!</a>
-                <p>Discover how to join the chamber of commerce and how it wil benfit your organization!</p>
-            </div>
+      <h1>Home</h1>
+      <div class="mainGrid">
+        <div class="hero">
+          <div class="hero-txt">
+            <h2>Welcome to Medellin</h2>
+            <a href="join.html">Join the Chamber</a>
+          </div>
         </div>
+        <div class="event">
+          <h2>Ribbon Cutting</h2>
+          <h3>🔹 The Diamond Shack</h3>
+          <p>
+            Contact us for the grand opening of The Diamond Shack, Thursday at
+            1:00 pm. <a href="contact.html">More Info...</a>
+          </p>
+        </div>
+        <div class="weather">
+          <h2>Current Weather</h2>
+          <div class="weather-info">
+            <img
+              src="https://placehold.jp/80x80.png"
+              alt="current weather"
+              id="weather-icon"
+              loading="lazy"
+            />
+            <h3><span id="current-temp"></span>&deg;C</h3>
+          </div>
+          <h3><span id="description">weather condition</span></h3>
+          <hr />
+          <p>current wind speed is <span id="speed">00</span></p>
+          <p>wind child is<span id="chill">00</span></p>
+          <p class="weather-link">
+            Data provided by:
+            <a href="https://openweathermap.org/">openweathermap.org</a>
+          </p>
+        </div>
+        <div class="newRelease">
+          <h2>new release</h2>
+          <p>
+            The Chamber developed an election software that allows the
+            electronic voting service in person, always guaranteeing security
+            and transparency in the election process of the Board of Directors
+            and Statutory Auditor. The counting of votes will be transmitted
+            live from the El Poblado Business Center.
+          </p>
+        </div>
+        <div class="spotlight">
+          <div class="spot-1"></div>
+          <div class="spot-2"></div>
+        </div>
+        <div class="join">
+          <a class="btn-yellow" href="join.html">Join Us!</a>
+          <p>
+            Discover how to join the chamber of commerce and how it wil benfit
+            your organization!
+          </p>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="adress">
-            <div>
-                <a href="index.html">
-                    <img src="images/logo2.webp"  loading="lazy" alt="Medellin Chamber logo ">
-                </a>            
-            </div>
-            <div class="footerText">
-                <p>Medellin Chamber of Commerce</p>
-                <p>Cl. 53 #45-77</p>
-                <p>Medellin, Colombia</p>
-            </div>
+      <div class="adress">
+        <div>
+          <a href="index.html">
+            <img
+              src="images/logo2.webp"
+              loading="lazy"
+              alt="Medellin Chamber logo "
+            />
+          </a>
         </div>
-        <div class="links">
-            <a href="mailto:medchamber@gmail.com">medchamber@gmail.com</a><br>
-            <a href="tel:+573006211095">+(57) 300-6211095</a><br>
-            <a href="https://www.google.com/maps/place/Medell%C3%ADn,+Antioquia/@6.2442034,-75.5812115,12z/data=!3m1!4b1!4m5!3m4!1s0x8e4428dfb80fad05:0x42137cfcc7b53b56!8m2!3d6.2476376!4d-75.5658153">Link to Map</a>
+        <div class="footerText">
+          <p>Medellin Chamber of Commerce</p>
+          <p>Cl. 53 #45-77</p>
+          <p>Medellin, Colombia</p>
         </div>
-        <div class="baseFooter">
-            <div class="footerText1">
-                <p>&copy;</p>
-                <p id="year" class="space"></p>
-                <p>Medellin chamber</p>
-                <p class="line"></p>
-            </div>
-            <p>Alma Benavides</p>
-            <p class="line"></p>
-            <p>WDD 230 Project</p>
-            <p class="line"></p>
-            <div class="footerText3">
-                <p class="space">Last Updated:</p>
-                <p id="lastTimeModified"></p>
-            </div>
+      </div>
+      <div class="links">
+        <a href="mailto:medchamber@gmail.com">medchamber@gmail.com</a><br />
+        <a href="tel:+573006211095">+(57) 300-6211095</a><br />
+        <a
+          href="https://www.google.com/maps/place/Medell%C3%ADn,+Antioquia/@6.2442034,-75.5812115,12z/data=!3m1!4b1!4m5!3m4!1s0x8e4428dfb80fad05:0x42137cfcc7b53b56!8m2!3d6.2476376!4d-75.5658153"
+          >Link to Map</a
+        >
+      </div>
+      <div class="baseFooter">
+        <div class="footerText1">
+          <p>&copy;</p>
+          <p id="year" class="space"></p>
+          <p>Medellin chamber</p>
+          <p class="line"></p>
         </div>
+        <p>Alma Benavides</p>
+        <p class="line"></p>
+        <p>WDD 230 Project</p>
+        <p class="line"></p>
+        <div class="footerText3">
+          <p class="space">Last Updated:</p>
+          <p id="lastTimeModified"></p>
+        </div>
+      </div>
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/spotlights.js"></script>
-</body>
+  </body>
 </html>

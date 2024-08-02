@@ -1,53 +1,81 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
-  
-/*----------- apply a natural box layout model to all elements --------------*/
-  * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    --color-1: #77BE95;
-    --color-2: #315E50;
-    --color-3: #F2E8CF;
-    --color-4: #BC4749;
-    --color-5: #A7C957;
-  }
-
-body {
-	font-size: 16px;
-  font-family: 'Mulish';
-	width: 100%;
-  margin: 0; padding: 0;
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
-h1, h2 {font-family: 'Eczar';}
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  --color-1: #77be95;
+  --color-2: #315e50;
+  --color-3: #f2e8cf;
+  --color-4: #bc4749;
+  --color-5: #a7c957;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Mulish';
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Eczar';
+}
 
 /*-------------------------HEADER-------------------------*/
 
 header {
-    display: flex; 
-    justify-content: space-between;
-    background-color: var(--color-2);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-2);
 }
-header img {width: 30px; }
-header,nav, main, footer {padding: 0 6vw 0 6vw;}
-.phone-contact, .mail-contact {display: none; font-size: 13px;}
+header img {
+  width: 30px;
+}
+header,
+nav,
+main,
+footer {
+  padding: 0 6vw 0 6vw;
+}
+.contact-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.phone-contact,
+.mail-contact {
+  display: none;
+  font-size: 13px;
+  color: #bbb;
+  align-items: center;
+}
 
 /*-------------------------NAV-------------------------*/
 
-nav .logo img {width: 150px; padding: 2%;} 
+nav .logo img {
+  width: 150px;
+  padding: 2%;
+}
 
 nav button {
-  margin: .2rem 2vw;
+  margin: 0.2rem 2vw;
   background-color: transparent;
   border: none;
   font-size: 2rem;
 }
 
 nav {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
-  background-color: var(--color-1); 
+  background-color: var(--color-1);
   font-family: 'Eczar';
   padding-right: 140px;
 }
@@ -56,83 +84,132 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-	display: none;
+  display: none;
 }
 
 nav ul li a {
   display: block;
   color: white;
   text-decoration: none;
-	padding: .5rem 0;
+  padding: 0.5rem 0;
   font-size: 1rem;
   text-align: center;
 }
 
-nav a {border-radius: 10px;}
-nav ul li.active a {background-color: var(--color-4); color: #fff;}
-nav ul li a:hover {background-color: var(--color-3);  color: black;}
+nav a {
+  border-radius: 10px;
+}
+nav ul li.active a {
+  background-color: var(--color-4);
+  color: #fff;
+}
+nav ul li a:hover {
+  background-color: var(--color-3);
+  color: black;
+}
 
-nav ul.open {display: block;}
+nav ul.open {
+  display: block;
+}
 
-#hamburguerBtn span:nth-child(1) {display: block;}
-#hamburguerBtn span:nth-child(2) {display: none;}
+#hamburguerBtn span:nth-child(1) {
+  display: block;
+}
+#hamburguerBtn span:nth-child(2) {
+  display: none;
+}
 
-#hamburguerBtn.open span:nth-child(1) {display: none;}
-#hamburguerBtn.open span:nth-child(2) {display: block;}
+#hamburguerBtn.open span:nth-child(1) {
+  display: none;
+}
+#hamburguerBtn.open span:nth-child(2) {
+  display: block;
+}
 
 /*-----------------------------FOOTER-------------------------------*/
 
-
 footer {
-    display: grid;
-    background-color: var(--color-1);
-    justify-items: center;
+  display: grid;
+  background-color: var(--color-1);
+  justify-items: center;
 }
 footer .baseFooter {
-    grid-row: 3;
-    width: 100%; 
-    border-top: 1px solid rgba(51, 51, 51, 0.306); 
-    margin: auto; text-align: center;
+  grid-row: 3;
+  width: 100%;
+  border-top: 1px solid rgba(51, 51, 51, 0.306);
+  margin: auto;
+  text-align: center;
 }
-footer .botones {grid-row: 2; display: block; padding-top: 2%;}
-footer .contact {display: flex; margin-left: 20%;}
-footer .logo {grid-row: 1; margin: auto;}
-footer .logo img {width: 170px;} 
-footer .botones img {width: 30px; }
-
+footer .botones {
+  grid-row: 2;
+  display: block;
+  padding-top: 2%;
+}
+footer .contact {
+  display: flex;
+  margin-left: 20%;
+}
+footer .logo {
+  grid-row: 1;
+  margin: auto;
+}
+footer .logo img {
+  width: 170px;
+}
+footer .botones img {
+  width: 30px;
+}
 
 /* --------------------------HOME PAGE---------------------------- */
 
-main {padding: 1rem 0vw 1rem 0vw;}
+main {
+  padding: 1rem 0vw 1rem 0vw;
+}
 
-h1 {text-align: center; margin: 1.5% auto ; color: var(--color-2);}
+h1 {
+  text-align: center;
+  margin: 1.5% auto;
+  color: var(--color-2);
+}
 
 .drink-div {
-    width: 80%;
-    margin: 50px auto auto auto ;
-    display: grid;
-    text-align: center;
-    align-items: center;
-    padding: 2%;
+  width: 80%;
+  margin: 50px auto auto auto;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  padding: 2%;
 }
 
-.drink-div h2 {font-size: 20px; color: var(--color-2);}
-.drink-div p {color: var(--color-2); font-size: 1.1em;}
-.drink img {width: 50%; box-shadow: -20px -20px 1px var(--color-4); border-radius: 10px;}
-.arrow img{display: none;}
+.drink-div h2 {
+  font-size: 20px;
+  color: var(--color-2);
+}
+.drink-div p {
+  color: var(--color-2);
+  font-size: 1.1em;
+}
+.drink img {
+  width: 50%;
+  box-shadow: -20px -20px 1px var(--color-4);
+  border-radius: 10px;
+}
+.arrow img {
+  display: none;
+}
 
-.button-pink  {
-    text-decoration: none;
-    background-color: var(--color-4);
-    color: white;
-    padding: 1rem;
-    border: none;
-    border-radius: 20px;
-    font-family: 'Eczar';
+.button-pink {
+  text-decoration: none;
+  background-color: var(--color-4);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Eczar';
 }
 .button-pink:hover {
-    background-color: var(--color-2);
-    color: var(--color-3);
+  background-color: var(--color-2);
+  color: var(--color-3);
 }
 
 .home-info {
@@ -140,7 +217,7 @@ h1 {text-align: center; margin: 1.5% auto ; color: var(--color-2);}
   padding: 3%;
 }
 
-.home-info p{
+.home-info p {
   grid-row: 2;
   padding: 2%;
   background-color: var(--color-3);
@@ -152,25 +229,48 @@ h1 {text-align: center; margin: 1.5% auto ; color: var(--color-2);}
   margin: auto;
 }
 
-.rounded-corners {border-radius: 10px;}
-.weather, .forecast-day {background-color: #e5e5e5;}
+.rounded-corners {
+  border-radius: 10px;
+}
+.weather,
+.forecast-day {
+  background-color: #e5e5e5;
+}
 
 .weather-info {
-  width: 100%; height: 50%; 
-  display: flex;  
-  justify-content: center; 
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.weather-info{height: 20%;}
-.weather-info h3 {font-size: 1.7rem;}
+.weather-info {
+  height: 20%;
+}
+.weather-info h3 {
+  font-size: 1.7rem;
+}
 
-.weather-container {margin: auto; width: 90%; display: grid; text-align: center;}
-.weather-container div{padding: 2%;}
+.weather-container {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  text-align: center;
+}
+.weather-container div {
+  padding: 2%;
+}
 
-div.forecast-day{margin: 2%; width: 100%;}
-.weather-name p{margin: 0;}
-.weather-name {margin: 2%;}
-
+div.forecast-day {
+  margin: 2%;
+  width: 100%;
+}
+.weather-name p {
+  margin: 0;
+}
+.weather-name {
+  margin: 2%;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -183,9 +283,12 @@ div.forecast-day{margin: 2%; width: 100%;}
   display: none;
 }
 
-.mySlides img{max-height: 350px;}
+.mySlides img {
+  max-height: 350px;
+}
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -205,8 +308,9 @@ div.forecast-day{margin: 2%; width: 100%;}
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .text {
@@ -223,7 +327,9 @@ div.forecast-day{margin: 2%; width: 100%;}
 
 /* .desc { }
 .desc-btn { background-color: #BC4749;}*/
-.text a {color: white;} 
+.text a {
+  color: white;
+}
 
 .numbertext {
   color: white;
@@ -244,7 +350,8 @@ div.forecast-day{margin: 2%; width: 100%;}
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -254,30 +361,45 @@ div.forecast-day{margin: 2%; width: 100%;}
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* --------------------------FRESH PAGE---------------------------- */
 
+fieldset {
+  margin-top: 5px;
+  border: none;
+  border-radius: 10px;
+}
+legend {
+  text-align: center;
+  font-family: 'Eczar';
+  font-size: 25px;
+  color: var(--color-4);
+}
 
-fieldset{margin-top: 5px; border: none; border-radius: 10px;}
-legend {text-align: center; font-family: 'Eczar'; font-size: 25px; color: var(--color-4) }
-
-.form-drink, .form-data {
-	margin: auto;
-	width: 70%;
-	min-width: 350px;
-	border-radius: 4px;
+.form-drink,
+.form-data {
+  margin: auto;
+  width: 70%;
+  min-width: 350px;
+  border-radius: 4px;
   background-color: var(--color-3);
 }
 
-.top input, .top textarea, label.top{
-	display: block;
-	font-size: 13px;
-	width: 100%;
-	padding: 16px;
-	border-radius: 4px;
+.top input,
+.top textarea,
+label.top {
+  display: block;
+  font-size: 13px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 4px;
 }
 
 .flavors {
@@ -286,42 +408,96 @@ legend {text-align: center; font-family: 'Eczar'; font-size: 25px; color: var(--
   text-align: center;
   justify-content: center;
 }
-.flavors label {color: #315E50; font-family: 'Mulish'; font-size: 15px;}
-select#fruit1, select#fruit2, select#fruit3 {
-  background-color: var(--color-5); 
-  border: var(--color-5); padding: 2%; 
+.flavors label {
+  color: #315e50;
+  font-family: 'Mulish';
+  font-size: 15px;
+}
+select#fruit1,
+select#fruit2,
+select#fruit3 {
+  background-color: var(--color-5);
+  border: var(--color-5);
+  padding: 2%;
   border-radius: 10px;
 }
 
-.fruits-img {width: 100%; display: flex; text-align: center; padding: 2%;}
-.fruits-img picture img {width: 80%; border-radius: 10px; text-align: center; margin: auto; justify-items: center;}
+.fruits-img {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  padding: 2%;
+}
+.fruits-img picture img {
+  width: 80%;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  justify-items: center;
+}
 
-textarea#instructions {width: 100%;}
-form input {border: 1px solid var(--color-3);}
-form label.top input:required {border-left: rgb(247, 187, 187) solid 6px;}
-form label.top input:required:valid {border-left: rgb(202, 252, 202) solid 6px;}
+textarea#instructions {
+  width: 100%;
+}
+form input {
+  border: 1px solid var(--color-3);
+}
+form label.top input:required {
+  border-left: rgb(247, 187, 187) solid 6px;
+}
+form label.top input:required:valid {
+  border-left: rgb(202, 252, 202) solid 6px;
+}
 
-.submitBtn{width: 100px; font-size: 18px; margin: 15px auto 15px 30px ; color: white;}
+.submitBtn {
+  width: 100px;
+  font-size: 18px;
+  margin: 15px auto 15px 30px;
+  color: white;
+}
 
-#form-output {display: none;}
-.form-data {margin-top: 2rem; padding: 2%;}
+#form-output {
+  display: none;
+}
+.form-data {
+  margin-top: 2rem;
+  padding: 2%;
+}
 
 /* --------------------------ABOUT US PAGE---------------------------- */
 
-.aboutUs-main h2{color: var(--color-2);}
-.logo-aboutUsPage{width: 60%; text-align: center; padding: 2%; margin: auto; background-color: var(--color-2); }
+.aboutUs-main h2 {
+  color: var(--color-2);
+}
+.logo-aboutUsPage {
+  width: 60%;
+  text-align: center;
+  padding: 2%;
+  margin: auto;
+  background-color: var(--color-2);
+}
 
-.info-aboutUs{width: 100%;display: grid;}
-div .aboutUs{text-align: center; margin-top: 30px;}
-.aboutUs p{margin: 40px;}
-.cultivation{width: 100%;}
+.info-aboutUs {
+  width: 100%;
+  display: grid;
+}
+div .aboutUs {
+  text-align: center;
+  margin-top: 30px;
+}
+.aboutUs p {
+  margin: 40px;
+}
+.cultivation {
+  width: 100%;
+}
 
 .site-purpose {
   grid-row: 1;
   width: 100%;
   padding: 0 5% 0 5%;
 }
-.contact-info{
+.contact-info {
   grid-row: 2;
   text-align: center;
   background-color: var(--color-3);
@@ -329,6 +505,14 @@ div .aboutUs{text-align: center; margin-top: 30px;}
   padding: 2%;
   margin-top: 50px;
 }
-.contact-info a{color: black;}
-.contact-info ul{list-style: none; padding: 0;}
-iframe {margin-top: 1rem; max-width: 100%;}
+.contact-info a {
+  color: black;
+}
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+iframe {
+  margin-top: 1rem;
+  max-width: 100%;
+}
